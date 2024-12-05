@@ -1,0 +1,44 @@
+---
+import DefaultBtn from "@components/_UI/DefaultBtn/DefaultBtn.astro";
+import OldSite from "src/layouts/OldSite.astro";
+---
+
+<OldSite title="Разводящая">
+  <div class="page-container">
+    <DefaultBtn component="a" href="./video-main.html">
+      Главная ВИДЕО
+    </DefaultBtn>
+    <DefaultBtn component="a" href="./category-1.html">
+      Главная (категория 1)
+    </DefaultBtn>
+    <DefaultBtn component="a" href="./category-2.html">
+      Главная (категория 2)
+    </DefaultBtn>
+    <DefaultBtn component="a" href="./video-detail-1.html">
+      Детальная 1
+    </DefaultBtn>
+    <DefaultBtn component="a" href="./video-detail-2.html">
+      Детальная 1
+    </DefaultBtn>
+  </div>
+
+  <style is:inline>
+    .page-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 5rem 2rem;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 5rem;
+      color: #06195e;
+      font-family: "RF Dewi", sans-serif;
+      font-weight: bold;
+      line-height: 1.2;
+      margin: 0 0 25px 0;
+    }
+  </style>
+</OldSite>

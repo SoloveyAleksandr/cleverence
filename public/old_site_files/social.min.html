@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- saved from url=(0245)https://code.jivo.ru/social.min.html?mode=email&vk_app_id=5299720&vk_joint_id=44954329&vk_key=353737363536332e39797436774a6244467638524d4e7157344a46456b307047395250686d4d4d5a594f312f59786f304757383d695a46386f4737654a36&logs=0#rand=592,lang=ru_RU -->
+<html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title></title>
+    <style>body{width:100%;font-weight:300;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;line-height:1.42857143;color:#7f8c8d;padding:0;margin:0}.info{text-align:center;float:none;padding-top:190px}.fb-send-to-messenger{z-index:10}.fb-send-to-messenger span{margin-left:60px}.box{width:100%;overflow:hidden}.fb-loader{position:absolute;left:134px;top:9px;z-index:1;opacity:0}.vk-button{z-index:10;position:relative}</style>
+</head>
+<body>
+
+<script>"function"!=typeof console.log&&(console.log=function(){});var data=window.location.search.split("?")[1].split("&"),config={mode:data[0].split("=")[1]},logs=null;function log(){logs&&console.log.apply(console,arguments)}function initFB(t){var e,o,i,n,a;e=document,o="script",i="facebook-jssdk",-1===(n=window.location.hash.split("=")[2]).indexOf("_")&&(n+="_"+n.toUpperCase()),a=e.getElementsByTagName(o)[0],e.getElementById(i)||((e=e.createElement(o)).id=i,e.src="https://connect.facebook.net/"+n+"/sdk.js",e.onload=function(){t()},a.parentNode.insertBefore(e,a))}function initVK(t){var e=document.getElementsByTagName("head")[0],o=document.createElement("script");o.type="text/javascript",o.src="//vk.com/js/api/openapi.js?130",o.onload=function(){t()},e.appendChild(o)}function getData(){return"check"==config.mode&&(config.vk_app_id=data[1].split("=")[1],config.vk_joint_id=data[2].split("=")[1],config.vk_key=data[3].split("=")[1],config.fb_app_id=data[4].split("=")[1],config.fb_joint_id=data[5].split("=")[1],config.fb_key=data[6].split("=")[1].replace("_","=")),"checkvk"!=config.mode&&"vk"!=config.mode||(config.vk_app_id=data[1].split("=")[1],config.vk_joint_id=data[2].split("=")[1],config.vk_key=data[3].split("=")[1]),"checkfb"!=config.mode&&"fb"!=config.mode||(8==data.length?(config.fb_app_id=data[4].split("=")[1],config.fb_joint_id=data[5].split("=")[1],config.fb_key=data[6].split("=")[1].replace("_","=")):(config.fb_app_id=data[1].split("=")[1],config.fb_joint_id=data[2].split("=")[1],config.fb_key=data[3].split("=")[1].replace("_","="))),config}logs=5<data.length?data[7].split("=")[1]>>0:data[4].split("=")[1]>>0,document.addEventListener("DOMContentLoaded",function(t){var e=getData();log("social init data:",e),"vk"!=e.mode&&"checkvk"!=e.mode&&"check"!=e.mode||initVK(function(){VK.init({apiId:e.vk_app_id}),"checkvk"==e.mode&&VK.Auth.getLoginStatus(function(t){log("VK LoginStatus:",t),"connected"==t.status?window.parent.postMessage({social:{vk:!0,fb:!1}},"*"):window.parent.postMessage({social:{vk:!1,fb:!1}},"*")}),"vk"==e.mode&&VK.Widgets.AllowMessagesFromCommunity("vk-send-message",{height:30,key:e.vk_key},e.vk_joint_id)}),"fb"!=e.mode&&"checkfb"!=e.mode&&"check"!=e.mode||initFB(function(){document.getElementById("fb-loader").style.opacity="1";var t=document.getElementById("fb-button");t.setAttribute("messenger_app_id",e.fb_app_id),t.setAttribute("page_id",e.fb_joint_id),t.setAttribute("data-ref",e.fb_key),window.fbAsyncInit=function(){FB.init({appId:e.fb_app_id,xfbml:!0,version:"v7.0"}),FB.getLoginStatus(function(t){log("FB LoginStatus:",t),"unknown"!=t.status?window.parent.postMessage({social:{vk:!1,fb:!0}},"*"):"check"==e.mode?VK.Auth.getLoginStatus(function(t){log("VK LoginStatus:",t),"connected"==t.status?window.parent.postMessage({social:{vk:!0,fb:!1}},"*"):window.parent.postMessage({social:{vk:!1,fb:!1}},"*")}):(log("VK/FB Not authorized."),window.parent.postMessage({social:{vk:!1,fb:!1}},"*"))})}})})</script>
+<div class="box">
+    <div style="width:184px;margin:0 auto">
+        <div id="vk-send-message" class="vk-button"></div>
+    </div>
+
+    <div id="fb-button" class="fb-send-to-messenger" color="blue" size="large"></div>
+
+    <div id="vk-status"></div>
+    <div id="fb-status"><img id="fb-loader" class="fb-loader" src="./processing.gif" alt=""></div>
+</div>
+
+
+</body></html>

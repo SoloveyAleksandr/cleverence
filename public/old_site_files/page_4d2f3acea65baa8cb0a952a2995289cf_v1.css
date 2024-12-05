@@ -1,0 +1,953 @@
+
+
+/* Start:/local/components/cleverence/banner.telegram/templates/.default/style.css?1706144618768*/
+.ns-block-social {
+    align-items: center;
+    background: #2ea6e1;
+    border-radius: 15px;
+    color: #fff;
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.ns-block-social__closet {
+    cursor: pointer;
+    margin-left: 23px;
+    margin-right: 14px;
+}
+
+.ns-blog-social__text {
+    font-family: 'IBM Plex Sans';
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: auto;
+}
+
+.ns-blog-social__link {
+    align-items: center;
+    color: #fff !important;
+    display: flex;
+    font-family: 'IBM Plex Sans';
+    font-size: 18px;
+    font-weight: 500;
+    padding: 19px 23px 19px;
+    width: 100%;
+}
+
+.ns-blog-social__link svg {
+    margin-left: 11px;
+}
+
+@media (max-width: 1000px) {
+    .ns-blog-social__text {
+        display: none;
+    }
+}
+/* End */
+
+
+/* Start:/local/components/cleverence/main.banner/templates/.default/style.css?16856041692537*/
+.inner-total-box .inner-photo-wrap {
+    margin: 0 0 25px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.banner-main {
+    margin-top: 40px;
+}
+
+.inner-total-box .inner-photo-wrap img {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-button_nb {
+    border: none !important;
+}
+
+.inner-history-box .inner-photo-wrap {
+    display: none;
+}
+
+.inner-top-box .inner-photo-wrap {
+    margin-bottom: 25px;
+}
+
+.inner-top-box .inner-photo-wrap img {
+    display: block;
+    width: 100%;
+}
+
+.inner-top-box .inner-form-wrap .field-input {
+    margin-bottom: 15px;
+}
+
+.inner-top-box .inner-form-wrap {
+    line-height: 1;
+}
+
+.inner-top-box .inner-text-wrap {
+    font-weight: 400;
+    margin-bottom: 25px;
+    max-height: 81px;
+    overflow: hidden;
+    position: relative;
+}
+
+.inner-top-box .inner-text-wrap:before {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 54px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+.inner-top-box .inner-text-wrap.active {
+    max-height: inherit;
+}
+
+.inner-top-box .inner-text-wrap.active:before {
+    display: none;
+}
+
+.inner-top-box .inner-text-wrap.active ~ .inner-text-action-wrap {
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .inner-total-box .inner-photo-wrap {
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        margin-bottom: 25px;
+        padding: 0 8px 0 0;
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .field-button button {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .inner-total-box .inner-photo-wrap {
+        padding: 0 1.2rem 0 0;
+    }
+
+    .inner-total-box .inner-photo-wrap img {
+        margin: 0;
+    }
+
+    .inner-top-box .inner-photo-wrap {
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        margin: 0;
+        padding: 0;
+        width: 49%;
+    }
+
+    .inner-top-box .form-wrap .field-button {
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+    }
+
+    .inner-top-box .form-wrap .field-input {
+        -ms-flex: 1;
+        flex: 1;
+        margin: 0;
+        padding: 0 15px 0 0;
+    }
+
+    .inner-top-box .inner-form-wrap {
+        max-width: 658px;
+    }
+
+    .inner-top-box .form-wrap {
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .inner-top-box .inner-text-wrap:before {
+        display: none;
+    }
+}
+
+@media (min-width: 1400px) {
+    .inner-top-box .inner-text-wrap {
+        margin-left: 0;
+        margin-right: -3rem;
+    }
+}
+/* End */
+
+
+/* Start:/local/components/cleverence/index_slider_partners_img/templates/.default/style.css?16789685981001*/
+.inner-logos-box .inner-item-wrap {
+    margin-bottom: 25px;
+    padding: 0 12px;
+    width: 16.66%;
+}
+
+@media (min-width: 1024px) {
+    .inner-logos-box {
+        margin-bottom: 7rem;
+    }
+
+    .inner-logos-box .inner-items-wrap {
+        margin: 0 -12px;
+    }
+
+}
+
+@media (max-width: 1023px) {
+
+    .inner-logos-box {
+        margin-bottom: 50px;
+    }
+
+    .inner-logos-box .outer-items-wrap {
+        margin-left: -25px;
+        margin-right: -25px;
+        overflow: auto;
+        -ms-overflow-style: none;
+        padding-left: 10px;
+    }
+
+    .inner-logos-box .outer-items-wrap::-webkit-scrollbar {
+        height: 0;
+        width: 0;
+    }
+
+    .inner-logos-box .inner-items-wrap {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        max-width: inherit;
+        width: auto;
+    }
+
+    .inner-logos-box .inner-item-wrap {
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        margin: 0;
+        width: auto;
+    }
+}
+/* End */
+
+
+/* Start:/local/components/cleverence/main.platform.features/templates/.default/style.css?16789685983665*/
+.inner-opportunities-box {
+    margin-bottom: 35px;
+}
+
+.inner-opportunities-box .inner-items-wrap {
+    justify-content: space-between;
+    margin: 0 -8px;
+}
+
+.inner-opportunities-box .inner-item-wrap {
+    background: #f8f8f8;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    padding: 0 8px;
+    width: 50%;
+}
+
+.inner-opportunities-box a {
+    text-decoration: none !important;
+}
+
+.inner-opportunities-box a:hover .tile-title {
+    color: #2ea6e1;
+    transition: .3s;
+}
+
+.inner-opportunities-box .wrap-width,
+.inner-opportunities-box .wrap-height {
+    width: 100%;
+}
+
+.inner-opportunities-box .inner-main-title {
+    margin-bottom: 5px;
+}
+
+.inner-opportunities-box .tile-photo {
+    height: 100px;
+    width: 100px;
+}
+
+.inner-opportunities-box .tile-photo img {
+    object-fit: cover;
+}
+
+.inner-opportunities-box .tile-w .tile-photo {
+    height: 225px;
+    width: 225px;
+}
+
+.inner-opportunities-box .tile-h .tile-photo {
+    height: 225px;
+    width: 225px;
+}
+
+@media (max-width: 1023px) {
+    .inner-opportunities-box .inner-item-wrap {
+        -ms-flex-order: 2;
+        order: 2;
+    }
+
+    .inner-opportunities-box .wrap-height {
+        -ms-flex-order: 3;
+        order: 3;
+    }
+
+    .inner-opportunities-box .wrap-height ~ .inner-item-wrap {
+        -ms-flex-order: 4;
+        order: 4;
+    }
+
+    .inner-opportunities-box .wrap-width {
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
+    .inner-opportunities-box .wrap-width ~ .wrap-width {
+        -ms-flex-order: 5;
+        order: 5;
+    }
+}
+
+@media (min-width: 640px) {
+    .inner-opportunities-box .inner-item-wrap {
+        width: calc(50% - 13px);
+    }
+}
+
+@media (max-width: 500px) {
+    .inner-opportunities-box .tile-w .tile-photo {
+        height: auto;
+    }
+
+    .inner-opportunities-box .tile-h .tile-photo {
+        height: auto;
+    }
+
+    .inner-opportunities-box .inner-item-wrap {
+        width: calc(50% - 7px);
+    }
+
+    .inner-opportunities-box .inner-item-wrap.wrap-width,
+    .inner-opportunities-box .inner-item-wrap.wrap-height {
+        width: 100%;
+    }
+
+    .inner-opportunities-box .tile-photo {
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .inner-opportunities-box .inner-item-wrap {
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .inner-opportunities-box {
+        margin-bottom: 12.5rem;
+    }
+
+    .inner-opportunities-box .inner-main-title {
+        margin-bottom: 25px;
+    }
+
+    .inner-opportunities-box .inner-items-wrap {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
+        margin: 0 -12px;
+    }
+
+    .inner-opportunities-box .inner-item-wrap {
+        margin-bottom: 25px;
+        padding: 0 12px;
+        width: calc(100% - 75px / 4);
+    }
+
+    .inner-opportunities-box .wrap01 {
+        -ms-grid-column: 1;
+        grid-column-end: 3;
+        grid-column-start: 1;
+    }
+
+    .inner-opportunities-box .wrap02 {
+        -ms-grid-column: 3;
+        grid-column-end: 5;
+        grid-column-start: 3;
+    }
+
+    .inner-opportunities-box .wrap-height {
+        -ms-grid-row: 2;
+        grid-row-end: 4;
+        grid-row-start: 2;
+    }
+
+    .inner-section .item-tile-main:not(.tile-w, .tile-h) .tile-photo-wrap {
+        bottom: 15px;
+        height: 10rem;
+        margin: 0;
+        position: absolute;
+        right: 15px;
+        width: 10rem;
+    }
+
+    .inner-opportunities-box .wrap01 .tile-photo,
+    .inner-opportunities-box .wrap02 .tile-photo,
+    .inner-opportunities-box .wrap-height .tile-photo {
+        max-width: 225px;
+    }
+
+    .inner-opportunities-box .tile-photo {
+        max-width: 100px;
+    }
+}
+/* End */
+
+
+/* Start:/local/components/cleverence/partners.info/templates/.default/style.css?16789685981640*/
+.inner-section.inner-partners-box {
+    margin-bottom: 25px;
+}
+
+.inner-partners-box .inner-title-wrap {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
+.inner-partners-box .inner-actions-wrap {
+    overflow: hidden;
+}
+
+.inner-partners-box .inner-actions-wrap .form-button {
+    width: 100%;
+}
+
+.inner-partners-box .inner-action-wrap {
+    margin-bottom: 15px;
+}
+
+.inner-partners-box .inner-items-wrap {
+    margin: 0 -12px;
+}
+
+.inner-partners-box .inner-item-wrap {
+    margin-bottom: 25px;
+    max-width: 326px;
+    padding: 0 12px;
+}
+
+@media (min-width: 1024px) {
+    .inner-section.inner-partners-box {
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 11.5rem;
+    }
+
+    .inner-partners-box .inner-title-wrap {
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        font-size: 2.4rem;
+        padding: 0 2.5rem 0 0;
+        width: 50%;
+    }
+
+    .inner-partners-box .inner-actions-wrap {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 3rem -15px 0 0;
+    }
+
+    .inner-partners-box .inner-actions-wrap .form-button {
+        width: auto;
+    }
+
+    .inner-partners-box .inner-action-wrap {
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        margin-bottom: 25px;
+        padding: 0 15px 0 0;
+        width: auto;
+    }
+
+    .inner-partners-box .outer-items-wrap {
+        -ms-flex: 1;
+        flex: 1;
+        overflow: hidden;
+        padding-left: 1.4rem;
+        position: relative;
+    }
+
+    .inner-partners-box .inner-item-wrap {
+        max-width: inherit;
+        width: 100%;
+    }
+}
+/* End */
+
+
+/* Start:/local/components/cleverence/history.box/templates/.default/style.css?16789685981486*/
+.inner-history-box .inner-title-wrap .form-button {
+    margin-top: 4px;
+    width: 100%;
+
+}
+
+.inner-history-box .inner-title-wrap {
+    background: #f8f8f8;
+}
+
+@media (max-width: 1024px) {
+    .inner-history-box .inner-title-wrap {
+        border-radius: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .inner-history-box .inner-title-wrap .inner-main-title {
+        margin-bottom: 2.5rem;
+    }
+
+    .inner-history-box .inner-title-wrap .form-button {
+        width: auto;
+    }
+
+    .inner-history-box .inner-title-wrap {
+        border-radius: 25px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .inner-history-box .inner-title-wrap {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        margin-bottom: 0;
+        min-height: 100%;
+        width: 32%;
+    }
+
+    .inner-history-box .inner-text-wrap {
+        display: block;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        width: 100%;
+    }
+
+    .inner-history-box .inner-photo-wrap {
+        align-items: flex-end;
+        display: flex;
+        display: -ms-flexbox;
+        -ms-flex: 1;
+        flex: 1;
+        -ms-flex-align: end;
+        margin: 0 -2.5rem;
+        padding-top: 2.5rem;
+    }
+
+    .inner-history-box .inner-photo-wrap img {
+        border-radius: 0 0 15px 15px;
+        display: block;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        width: 100%;
+    }
+}
+/* End */
+
+
+/* Start:/local/components/cleverence/history.projects/templates/.default/style.css?16789685982967*/
+.inner-section .item-tile-history {
+    color: inherit;
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 500;
+    min-height: 100%;
+    padding: 15px;
+}
+
+.inner-section .item-tile-history .tile-photo-wrap {
+    display: block;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.inner-section .item-tile-history .tile-info-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inner-section .item-tile-history .tile-action-wrap {
+    display: block;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.inner-section .item-tile-history .tile-inner-wrap {
+    display: block;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.inner-section .item-tile-history .tile-title,
+.inner-section .item-tile-history .tile-logo {
+    display: none;
+}
+
+.inner-section .item-tile-history .tile-title {
+    font-size: 24px;
+    font-size: 2.4rem;
+    margin-bottom: 46px;
+    margin-bottom: 4.6rem;
+}
+
+.inner-section .item-tile-history .tile-logo {
+    height: 50px;
+    height: 5rem;
+    margin-bottom: 25px;
+    margin-bottom: 2.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.inner-section .item-tile-history .tile-logo img {
+    display: block;
+    height: 100%;
+    max-height: 100%;
+    width: auto;
+}
+
+.inner-section .item-tile-history .tile-photo {
+    border-radius: 15px;
+}
+
+.inner-section .item-tile-history .tile-photo:before {
+    padding-top: 60%;
+}
+
+.inner-section .item-tile-history {
+    background: #f8f8f8;
+    border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+    .inner-section .item-tile-event-main {
+        min-height: 100%;
+    }
+
+    .inner-section .item-tile-history.tile-main {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .inner-section .item-tile-history.tile-main .tile-photo-wrap {
+        margin: 0;
+        padding: 0 15px 0 0;
+        width: 50%;
+    }
+
+    .inner-section .item-tile-history.tile-main .tile-info-wrap {
+        padding: 0 0 0 15px;
+        width: 50%;
+    }
+
+    .inner-section .item-tile-history:not(.tile-main) .tile-photo:before {
+        padding-top: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .inner-section .item-tile-history {
+        font-size: 1.8rem;
+        padding: 2.5rem;
+    }
+
+    .inner-section .item-tile-history.tile-main .tile-photo-wrap {
+        padding-right: 2.5rem;
+    }
+
+    .inner-section .item-tile-history.tile-main .tile-info-wrap {
+        padding-left: 2.5rem;
+    }
+
+    .inner-section .item-tile-history .tile-photo-wrap {
+        margin-bottom: 2.5rem;
+    }
+
+    .inner-section .item-tile-history .tile-title,
+    .inner-section .item-tile-history .tile-logo {
+        display: block;
+    }
+
+    .inner-section .item-tile-history {
+        border-radius: 25px;
+    }
+}
+/* End */
+
+
+/* Start:/local/components/cleverence/career.info/templates/.default/style.css?16789685984051*/
+.inner-carier-box {
+    margin-bottom: 25px;
+}
+
+.inner-carier-box .inner-text-wrap {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.inner-carier-box .inner-action-wrap {
+    margin-bottom: 15px;
+}
+
+.inner-carier-box .inner-action-wrap .form-button {
+    width: 100%;
+}
+
+.inner-carier-box .inner-title-wrap {
+    margin-bottom: 50px;
+}
+
+.inner-carier-box .inner-items-wrap {
+    margin: 0 -8px;
+}
+
+.inner-carier-box .inner-item-wrap {
+    margin-bottom: 25px;
+    padding: 0 8px;
+    width: 50%;
+}
+
+.inner-carier-box .wrap-main {
+    width: 100%;
+}
+
+.inner-carier-box .tile-title-wrap .tile-info {
+    font-size: 12px;
+}
+
+.inner-carier-box .wrap-main .item-tile-carier {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.inner-section .elm-faces {
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 400px;
+    position: relative;
+    width: 100%;
+}
+
+.elm-faces__item {
+    width: 60px;
+}
+
+.inner-section .elm-faces img {
+    border: 5px solid #fff;
+    border-radius: 50%;
+    display: block;
+    height: 85px;
+    width: 85px;
+    /*transform: translateX(-25%);*/
+}
+
+@media (min-width: 640px) {
+    .inner-carier-box .inner-item-wrap {
+        width: 33.33%;
+    }
+
+    .inner-carier-box .inner-item-wrap .item-tile-carier {
+        width: 100%;
+    }
+
+    .elm-faces__item {
+        width: 75px;
+    }
+
+    .inner-section .elm-faces img {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .inner-section.inner-carier-box {
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 7.5rem;
+    }
+
+    .inner-carier-box .inner-title-wrap {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        margin-bottom: 2.5rem;
+        padding: 0 1.2rem 0 0;
+        width: 50%;
+    }
+
+    .inner-carier-box .inner-text-wrap {
+        display: block;
+        -ms-flex: 1;
+        flex: 1;
+        font-size: 2.4rem;
+        margin-bottom: 1.5rem;
+        max-width: 24.58333333em;
+    }
+
+    .inner-carier-box .inner-actions-wrap {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 0 -15px 0 0;
+    }
+
+    .inner-carier-box .inner-action-wrap {
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        margin-bottom: 0;
+        padding: 1rem 15px 0 0;
+        width: auto;
+    }
+
+    .inner-carier-box .outer-items-wrap {
+        overflow: hidden;
+        padding: 0 0 0 1.2rem;
+        width: 50%;
+    }
+
+    .inner-carier-box .inner-items-wrap {
+        margin: 0 -12px;
+    }
+
+    .inner-carier-box .inner-item-wrap {
+        margin-bottom: 2.5rem;
+        padding: 0 1.2rem;
+    }
+
+    .inner-carier-box .inner-main-title {
+        margin-bottom: 2.5rem;
+    }
+}
+
+/*TOTAL*/
+.inner-section.inner-total-box {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.inner-total-box .inner-items-wrap {
+    margin: 0 -8px;
+}
+
+.inner-total-box .inner-item-wrap {
+    margin-bottom: 25px;
+    padding: 0 8px;
+    width: 50%;
+}
+
+.inner-total-box .wrap-main {
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .inner-total-box {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .inner-total-box .outer-items-wrap {
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        overflow: hidden;
+        padding: 0 0 0 8px;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .inner-total-box {
+        margin-bottom: 12.5rem;
+    }
+
+    .inner-total-box .outer-items-wrap {
+        padding: 0 0 0 1.2rem;
+    }
+
+    .inner-total-box .inner-items-wrap {
+        margin: 0 -1.2rem;
+    }
+
+    .inner-total-box .inner-item-wrap {
+        margin-bottom: 2.5rem;
+        padding: 0 1.2rem;
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .inner-section.inner-total-box {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+/*TOTAL END*/
+/* End */
+/* /local/components/cleverence/banner.telegram/templates/.default/style.css?1706144618768 */
+/* /local/components/cleverence/main.banner/templates/.default/style.css?16856041692537 */
+/* /local/components/cleverence/index_slider_partners_img/templates/.default/style.css?16789685981001 */
+/* /local/components/cleverence/main.platform.features/templates/.default/style.css?16789685983665 */
+/* /local/components/cleverence/partners.info/templates/.default/style.css?16789685981640 */
+/* /local/components/cleverence/history.box/templates/.default/style.css?16789685981486 */
+/* /local/components/cleverence/history.projects/templates/.default/style.css?16789685982967 */
+/* /local/components/cleverence/career.info/templates/.default/style.css?16789685984051 */

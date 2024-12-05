@@ -1,0 +1,36 @@
+---
+import LinkBtn from "@components/_UI/LinkBtn/LinkBtn.astro";
+import VideoCard from "@components/VideoCard/VideoCard.astro";
+import { Sprite } from "astro-icon";
+import OldSite from "src/layouts/OldSite.astro";
+---
+
+<OldSite>
+  <a href="#" class="page-back">
+    <Sprite name="chevron-left" />
+     На главную раздела видео
+  </a>
+  <h1 class="block-title page-title">Инструкции по продуктам</h1>
+
+  <div
+    class="section-margin video-collection"
+    data-hidden-list="6"
+    data-hidden-count="6"
+  >
+    {
+      [...new Array(24)].map(() => (
+        <VideoCard
+          title="“Склад 15” операции на ТСД и в 1С"
+          subtitle="ДиКом | Автоматизированные системы хранения | Склад 15"
+          text={false}
+          poster="./img/video-2.png"
+          date={false}
+          data-item
+        />
+      ))
+    }
+    <LinkBtn class="video-collection__btn" data-hidden-btn>
+      Смотреть больше
+    </LinkBtn>
+  </div>
+</OldSite>

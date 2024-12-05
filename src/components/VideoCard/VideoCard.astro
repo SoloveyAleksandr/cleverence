@@ -1,0 +1,49 @@
+---
+import { Sprite } from "astro-icon";
+
+interface Props {
+  title?: string | false;
+  subtitle?: string | false;
+  text?: string | false;
+  date?: string | false;
+  time?: string;
+  group?: string;
+  poster?: string;
+}
+
+const {
+  title = false,
+  subtitle = "Дмитрий Чумичев",
+  text = "Генеральный директор «Архио»",
+  date = "10 сентября 2022",
+  time = "4:20",
+  group = "4",
+  poster = "./img/video-1.png",
+  ...rest
+} = Astro.props;
+---
+
+<a href="#" class="video-card" {...rest}>
+  <div class="video-card__container">
+    {time && <spna class="video-card__time" set:html={time} />}
+    {
+      group && (
+        <span class="video-card__group">
+          <Sprite name="collection" />
+          {group}
+        </span>
+      )
+    }
+    <span class="video-card__btn">
+      <Sprite name="play" />
+    </span>
+    <img src={poster} alt="" class="video-card__poster" />
+  </div>
+
+  <div class="video-card__inner">
+    {title && <h5 class="video-card__title" set:html={title} />}
+    {subtitle && <h5 class="video-card__subtitle" set:html={subtitle} />}
+    {text && <p class="video-card__text" set:html={text} />}
+    {date && <span class="video-card__date" set:html={date} />}
+  </div>
+</a>

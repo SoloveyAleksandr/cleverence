@@ -1,0 +1,23 @@
+---
+import LinkBtn from "@components/_UI/LinkBtn/LinkBtn.astro";
+import VideoCard from "@components/VideoCard/VideoCard.astro";
+
+interface Props {
+  title?: string;
+  clasName?: string;
+}
+
+const { title = "Новое", clasName } = Astro.props;
+---
+
+<section class="video-category" class:list={[clasName]}>
+  <h3 class="block-title video-category__title" set:html={title} />
+  <LinkBtn class="video-category__btn">Все видео</LinkBtn>
+  <div class="video-category__list">
+    <slot>
+      <VideoCard />
+      <VideoCard />
+      <VideoCard />
+    </slot>
+  </div>
+</section>

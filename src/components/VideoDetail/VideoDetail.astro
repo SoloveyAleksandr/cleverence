@@ -1,0 +1,108 @@
+---
+import DefaultBtn from "@components/_UI/DefaultBtn/DefaultBtn.astro";
+import VideoCard from "@components/VideoCard/VideoCard.astro";
+import { Sprite } from "astro-icon";
+---
+
+<section class="section-margin video-detail">
+  <div class="video-detail__container">
+    <div class="video-detail__video">
+      <iframe
+        src="https://vk.com/video_ext.php?oid=-44954329&id=456239626&hash=66c410a432bc0f8a&hd=2&js_api=1"
+        allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+        frameborder="0"
+        allowfullscreen=""></iframe>
+    </div>
+
+    <div class="video-detail-links _dropped" data-dropdown>
+      <span class="video-detail-links__title"
+        >Смотреть это видео на других платформах</span
+      >
+      <button type="button" class="video-detail-links__btn" data-btn>
+        <Sprite name="chevron-left" />
+      </button>
+      <div class="video-detail-links__list">
+        <a href="#" class="video-detail-links__item">
+          <img src="./img/video-res-1.svg" alt="" />
+        </a>
+        <a href="#" class="video-detail-links__item">
+          <img src="./img/video-res-2.svg" alt="" />
+        </a>
+        <a href="#" class="video-detail-links__item">
+          <img src="./img/video-res-3.svg" alt="" />
+        </a>
+        <a href="#" class="video-detail-links__item">
+          <img src="./img/video-res-4.svg" alt="" />
+        </a>
+        <a href="#" class="video-detail-links__item">
+          <img src="./img/video-res-5.svg" alt="" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="video-detail__inner">
+    <slot>
+      <div class="video-detail-info">
+        <h1 class="video-detail-info__title">
+          Компания «АРХИО» автоматизирует учёт продукции на складе и на
+          производстве
+        </h1>
+        <p class="video-detail-info__text">
+          Начальник производства компании «АРХИО» отметил, что внедрение
+          «Клеверенса» и ТСД позволило существенно сократить время выпуска
+          из производства и перемещения продукции на склад, а также повысить
+          прозрачность учёта.
+        </p>
+        <div class="video-detail-info__inner">
+          <span class="video-detail-info__desc">
+            Дмитрий Чимачев, Генеральный директор «Архио»
+          </span>
+          <span class="video-detail-info__date"> 10 сентября 2022</span>
+        </div>
+        <a href="#" class="video-detail-info__link">
+          Скачать PDF или читать на сайте
+        </a>
+
+        <DefaultBtn class="video-detail__btn" component="a" href="#">
+          Хочу так же
+        </DefaultBtn>
+      </div>
+
+      <div class="video-detail-swiper" data-swiper-init>
+        <h3 class="video-detail-swiper__title">
+          Коллеция истории успеха Архио
+        </h3>
+        <div class="video-detail-swiper__container">
+          <div
+            class="swiper"
+            data-swiper
+            data-props=`{"slidesPerView":1,"spaceBetween":16,"breakpoints":{"601":{"slidesPerView":2}}}`
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <VideoCard poster="./img/video-10.png" />
+              </div>
+              <div class="swiper-slide">
+                <VideoCard poster="./img/video-10.png" />
+              </div>
+              <div class="swiper-slide">
+                <VideoCard poster="./img/video-10.png" />
+              </div>
+              <div class="swiper-slide">
+                <VideoCard poster="./img/video-10.png" />
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="video-detail-swiper__btn" data-prev>
+            <Sprite name="chevron-left" />
+          </button>
+          <button type="button" class="video-detail-swiper__btn" data-next>
+            <Sprite name="chevron-right" />
+          </button>
+        </div>
+      </div>
+    </slot>
+  </div>
+</section>

@@ -1,0 +1,49 @@
+.video-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.video-collection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 52px 23px;
+
+  @include breakpoint($sl-bp) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint($sm-bp) {
+    width: 100%;
+    gap: 20px;
+  }
+
+  @include breakpoint($xs-bp) {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  &._full-open {
+    .video-collection__btn {
+      display: none;
+    }
+  }
+
+  &__btn {
+    display: none;
+
+    @include breakpoint($xs-bp) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .video-card {
+    &._hidden-item {
+      @include breakpoint($xs-bp) {
+        display: none;
+      }
+    }
+  }
+}

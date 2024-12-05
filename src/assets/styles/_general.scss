@@ -1,0 +1,75 @@
+a.default-btn {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+*.f-ibm {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+*.f-dewi {
+  font-family: 'RF Dewi', sans-serif;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.section-margin {
+  margin-bottom: 120px;
+
+  @include breakpoint($sm-bp) {
+    margin-bottom: 84px;
+  }
+
+  @include breakpoint($xs-bp) {
+    margin-bottom: 62px;
+  }
+}
+
+.block-title {
+  font-family: $f-dewi;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 700;
+  color: $dark;
+
+  @include breakpoint($xs-bp) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.page-back {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #5163A3;
+  font-size: 14px;
+  line-height: 18px;
+  transition: .3s;
+  margin: 44px 0 28px;
+
+  @include breakpoint($sm-bp) {
+    margin: 20px 0 16px;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  svg {
+    flex: none;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.page-title {
+  margin: 28px 0 52px;
+
+  @include breakpoint($sm-bp) {
+    margin: 20px 0 28px;
+  }
+}

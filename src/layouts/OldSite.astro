@@ -1,0 +1,2996 @@
+---
+import { Sprite } from "astro-icon";
+import "../assets/styles/style.scss";
+
+interface Props {
+  title?: string;
+}
+
+const { title = "заголовок страницы" } = Astro.props;
+---
+
+<!doctype html>
+<!-- saved from url=(0026)https://www.cleverence.ru/ -->
+<html
+  lang="ru"
+  class="bx-core bx-mac bx-no-touch bx-retina bx-chrome ya-page_js_yes"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script
+      is:inline
+      type="text/javascript"
+      async=""
+      src="./old_site_files/vZbT1jpZVX"></script>
+    <script is:inline charset="UTF-8" async="" src="./old_site_files/init"
+    ></script>
+    <script is:inline type="text/javascript" async="" src="./old_site_files/js"
+    ></script>
+    <script is:inline async="" src="./old_site_files/gtm.js"></script>
+    <script
+      is:inline
+      type="text/javascript"
+      async=""
+      src="./old_site_files/analytics.js"></script>
+    <script
+      is:inline
+      type="text/javascript"
+      async=""
+      src="./old_site_files/js(1)"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./old_site_files/widget-button.css"
+    />
+    <meta
+      http-equiv="origin-trial"
+      content="A/kargTFyk8MR5ueravczef/wIlTkbVk1qXQesp39nV+xNECPdLBVeYffxrM8TmZT6RArWGQVCJ0LRivD7glcAUAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZzIiLCJleHBpcnkiOjE3NDIzNDIzOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"
+    />
+    <title>
+      {title}
+    </title>
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="штрихкодирование, склад, штрихкод, автоматизация склада, терминалы сбора данных, сбор данных, приход, учет готовой продукции, пикинг, подбор заказов, системная интеграция"
+    />
+    <meta
+      name="description"
+      content="Клеверенс - компания и программы для бизнеса. Мы помогаем производителям, продавцам и системным интеграторам решать задачи сканирования Штрихкодов и RFID-меток при помощи мобильных приложений, чтобы каждый сотрудник склада, магазина, производства решал поставленные руководством задачи со смартфона."
+    />
+    <link
+      rel="icon"
+      type="image/vnd.microsoft.icon"
+      href="https://www.cleverence.ru/favicon.ico"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://www.cleverence.ru/favicon.ico"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      is:inline
+      type="text/javascript"
+      async=""
+      src="./old_site_files/js(2)"></script>
+    <script is:inline async="" src="./old_site_files/analytics.js"></script>
+    <script is:inline async="" id="mango-js" src="./old_site_files/mango.js"
+    ></script>
+    <script
+      is:inline
+      type="text/javascript"
+      async=""
+      charset="utf-8"
+      src="./old_site_files/all.js"></script>
+    <script
+      is:inline
+      type="text/javascript"
+      async=""
+      id="tmr-code"
+      src="./old_site_files/code.js"></script>
+    <script is:inline async="" src="./old_site_files/tag.js"></script>
+    <script is:inline async="" src="./old_site_files/gtm(1).js"></script>
+    <script
+      is:inline
+      type="text/javascript"
+      async=""
+      charset="utf-8"
+      src="./old_site_files/recaptcha__ru.js"
+      crossorigin="anonymous"
+      integrity="sha384-izaRTzQu2LHSbHupiT56/bTstrx8HfUhDDY1xdIgPKGxS7ScXmDivMsfJ7L+Xs/F"
+    ></script>
+    <script is:inline>
+      if (!window.BX) window.BX = {};
+      if (!window.BX.message)
+        window.BX.message = function (mess) {
+          if (typeof mess === "object") {
+            for (let i in mess) {
+              BX.message[i] = mess[i];
+            }
+            return true;
+          }
+        };
+    </script>
+    <script is:inline>
+      (window.BX || top.BX).message({
+        JS_CORE_LOADING: "\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430...",
+        JS_CORE_NO_DATA:
+          "- \u041d\u0435\u0442 \u0434\u0430\u043d\u043d\u044b\u0445 -",
+        JS_CORE_WINDOW_CLOSE: "\u0417\u0430\u043a\u0440\u044b\u0442\u044c",
+        JS_CORE_WINDOW_EXPAND:
+          "\u0420\u0430\u0437\u0432\u0435\u0440\u043d\u0443\u0442\u044c",
+        JS_CORE_WINDOW_NARROW:
+          "\u0421\u0432\u0435\u0440\u043d\u0443\u0442\u044c \u0432 \u043e\u043a\u043d\u043e",
+        JS_CORE_WINDOW_SAVE:
+          "\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c",
+        JS_CORE_WINDOW_CANCEL:
+          "\u041e\u0442\u043c\u0435\u043d\u0438\u0442\u044c",
+        JS_CORE_WINDOW_CONTINUE:
+          "\u041f\u0440\u043e\u0434\u043e\u043b\u0436\u0438\u0442\u044c",
+        JS_CORE_H: "\u0447",
+        JS_CORE_M: "\u043c",
+        JS_CORE_S: "\u0441",
+        JSADM_AI_HIDE_EXTRA:
+          "\u0421\u043a\u0440\u044b\u0442\u044c \u043b\u0438\u0448\u043d\u0438\u0435",
+        JSADM_AI_ALL_NOTIF:
+          "\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u044c \u0432\u0441\u0435",
+        JSADM_AUTH_REQ:
+          "\u0422\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044f \u0430\u0432\u0442\u043e\u0440\u0438\u0437\u0430\u0446\u0438\u044f!",
+        JS_CORE_WINDOW_AUTH: "\u0412\u043e\u0439\u0442\u0438",
+        JS_CORE_IMAGE_FULL:
+          "\u041f\u043e\u043b\u043d\u044b\u0439 \u0440\u0430\u0437\u043c\u0435\u0440",
+      });
+    </script>
+
+    <script is:inline src="./old_site_files/core.js"></script>
+
+    <script is:inline>
+      BX.Runtime.registerExtension({
+        name: "main.core",
+        namespace: "BX",
+        loaded: true,
+      });
+    </script>
+    <script is:inline>
+      BX.setJSList([
+        "/bitrix/js/main/core/core_ajax.js",
+        "/bitrix/js/main/core/core_promise.js",
+        "/bitrix/js/main/polyfill/promise/js/promise.js",
+        "/bitrix/js/main/loadext/loadext.js",
+        "/bitrix/js/main/loadext/extension.js",
+        "/bitrix/js/main/polyfill/promise/js/promise.js",
+        "/bitrix/js/main/polyfill/find/js/find.js",
+        "/bitrix/js/main/polyfill/includes/js/includes.js",
+        "/bitrix/js/main/polyfill/matches/js/matches.js",
+        "/bitrix/js/ui/polyfill/closest/js/closest.js",
+        "/bitrix/js/main/polyfill/fill/main.polyfill.fill.js",
+        "/bitrix/js/main/polyfill/find/js/find.js",
+        "/bitrix/js/main/polyfill/matches/js/matches.js",
+        "/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js",
+        "/bitrix/js/main/core/core.js",
+        "/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js",
+        "/bitrix/js/main/lazyload/dist/lazyload.bundle.js",
+        "/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js",
+        "/bitrix/js/main/parambag/dist/parambag.bundle.js",
+      ]);
+    </script>
+    <script is:inline>
+      (window.BX || top.BX).message({
+        LANGUAGE_ID: "ru",
+        FORMAT_DATE: "DD.MM.YYYY",
+        FORMAT_DATETIME: "DD.MM.YYYY HH:MI:SS",
+        COOKIE_PREFIX: "BITRIX_SM",
+        SERVER_TZ_OFFSET: "10800",
+        UTF_MODE: "Y",
+        SITE_ID: "s1",
+        SITE_DIR: "/",
+        USER_ID: "",
+        SERVER_TIME: 1733215841,
+        USER_TZ_OFFSET: 0,
+        USER_TZ_AUTO: "Y",
+        bitrix_sessid: "bcc0268df7c081e59a42d75a5442b5e1",
+      });
+    </script>
+
+    <script is:inline src="./old_site_files/jquery-1.12.4.min.js"></script>
+    <script is:inline src="./old_site_files/api.js"></script>
+    <script is:inline type="text/javascript">
+      window["recaptchaFreeOptions"] = {
+        size: "normal",
+        theme: "light",
+        badge: "bottomright",
+        version: null,
+        action: null,
+        lang: "ru",
+        key: "6Ld3zsYUAAAAAF1wRZG6YLUr1q6WqoXo3PzaGyJn",
+      };
+    </script>
+    <script is:inline type="text/javascript">
+      "use strict";
+
+      var Recaptchafree = Recaptchafree || {};
+      Recaptchafree.items = new Array();
+      Recaptchafree.form_submit;
+      /**
+       * render recaptcha
+       * @returns false
+       */
+      Recaptchafree.render = function () {
+        if (window.grecaptcha) {
+          var elements = document.querySelectorAll("div.g-recaptcha");
+          var widget;
+          Recaptchafree.items = [];
+          for (var i = 0; i < elements.length; i++) {
+            if (elements[i].innerHTML === "") {
+              widget = grecaptcha.render(elements[i], {
+                sitekey: elements[i].getAttribute("data-sitekey"),
+                theme: elements[i].getAttribute("data-theme"),
+                size: elements[i].getAttribute("data-size"),
+                callback: elements[i].getAttribute("data-callback"),
+                badge: elements[i].getAttribute("data-badge"),
+              });
+              elements[i].setAttribute("data-widget", widget);
+              Recaptchafree.items.push(widget);
+            } else {
+              widget = elements[i].getAttribute("data-widget");
+              Recaptchafree.items.push(parseInt(widget));
+            }
+          }
+        }
+      };
+      /**
+       * reset recaptcha after ajax or show modal
+       * @returns  false
+       */
+      Recaptchafree.reset = function () {
+        if (window.grecaptcha) {
+          Recaptchafree.render();
+          for (var i = 0; i < Recaptchafree.items.length; i++) {
+            grecaptcha.reset(Recaptchafree.items[i]);
+          }
+        }
+      };
+      /**
+       * callback submit form with invisible recaptcha
+       * @param {type} token
+       * @returns false
+       */
+      function RecaptchafreeSubmitForm(token) {
+        if (Recaptchafree.form_submit !== undefined) {
+          var x = document.createElement("INPUT"); // create token input
+          x.setAttribute("type", "hidden");
+          x.name = "g-recaptcha-response";
+          x.value = token;
+          Recaptchafree.form_submit.appendChild(x); // append current form
+          var elements = Recaptchafree.form_submit.elements;
+          for (var i = 0; i < elements.length; i++) {
+            if (elements[i].getAttribute("type") === "submit") {
+              var submit_hidden = document.createElement("INPUT"); // create submit input hidden
+              submit_hidden.setAttribute("type", "hidden");
+              submit_hidden.name = elements[i].name;
+              submit_hidden.value = elements[i].value;
+              Recaptchafree.form_submit.appendChild(submit_hidden); // append current form
+            }
+          }
+          document.createElement("form").submit.call(Recaptchafree.form_submit); // submit form
+        }
+      }
+      /**
+       * onload recaptcha
+       * @returns  false
+       */
+      function onloadRecaptchafree() {
+        Recaptchafree.render();
+        // If invisible recaptcha on the page
+        if (document.addEventListener) {
+          document.addEventListener(
+            "submit",
+            function (e) {
+              if (e.target && e.target.tagName === "FORM") {
+                var g_recaptcha = e.target.querySelectorAll("div.g-recaptcha");
+                if (
+                  g_recaptcha[0] !== undefined &&
+                  g_recaptcha[0].getAttribute("data-size") === "invisible"
+                ) {
+                  var widget_id = g_recaptcha[0].getAttribute("data-widget");
+                  grecaptcha.execute(widget_id);
+                  Recaptchafree.form_submit = e.target;
+                  e.preventDefault();
+                }
+              }
+            },
+            false,
+          );
+        } else {
+          document.attachEvent("onsubmit", function (e) {
+            var target = e.target || e.srcElement;
+            if (e.target && e.target.tagName === "FORM") {
+              var widget_id = e.target.getAttribute("data-widget");
+              grecaptcha.execute(widget_id);
+              Recaptchafree.form_submit = target;
+              e.returnValue = false;
+            }
+          });
+        }
+        // hide grecaptcha-badge, if multi invisible recaptcha
+        var badges = document.querySelectorAll(".grecaptcha-badge");
+        for (var i = 1; i < badges.length; i++) {
+          badges[i].style.display = "none";
+        }
+      }
+    </script>
+    <script is:inline type="text/javascript">
+      (function () {
+        "use strict";
+
+        var counter = function () {
+          var cookie = (function (name) {
+            var parts = ("; " + document.cookie).split("; " + name + "=");
+            if (parts.length == 2) {
+              try {
+                return JSON.parse(
+                  decodeURIComponent(parts.pop().split(";").shift()),
+                );
+              } catch (e) {}
+            }
+          })("BITRIX_CONVERSION_CONTEXT_s1");
+
+          if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME")) return;
+
+          var request = new XMLHttpRequest();
+          request.open(
+            "POST",
+            "/bitrix/tools/conversion/ajax_counter.php",
+            true,
+          );
+          request.setRequestHeader(
+            "Content-type",
+            "application/x-www-form-urlencoded",
+          );
+          request.send(
+            "SITE_ID=" +
+              encodeURIComponent("s1") +
+              "&sessid=" +
+              encodeURIComponent(BX.bitrix_sessid()) +
+              "&HTTP_REFERER=" +
+              encodeURIComponent(document.referrer),
+          );
+        };
+
+        if (window.frameRequestStart === true)
+          BX.addCustomEvent("onFrameDataReceived", counter);
+        else BX.ready(counter);
+      })();
+    </script>
+    <!-- dev2fun module opengraph -->
+    <meta
+      property="og:title"
+      content="Компания Клеверенс помогает производителям, продавцам и системным интеграторам решать задачи сканирования Штрихкодов и RFID-меток при помощи мобильных приложений для ТСД"
+    />
+    <meta
+      property="og:description"
+      content="Клеверенс - компания и программы для бизнеса. Мы помогаем производителям, продавцам и системным интеграторам решать задачи сканирования Штрихкодов и RFID-меток ..."
+    />
+    <meta property="og:url" content="https://www.cleverence.ru/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Клеверенс" />
+    <!-- /dev2fun module opengraph -->
+
+    <script is:inline src="./old_site_files/intlTelInput.min.js"></script>
+    <script is:inline src="./old_site_files/jquery.inputmask.min.js"></script>
+    <script is:inline src="./old_site_files/jquery.maskedinput.min.js"></script>
+    <script is:inline src="./old_site_files/slick.min.js"></script>
+    <script is:inline src="./old_site_files/scripts.js"></script>
+    <script is:inline src="./old_site_files/script.js"></script>
+    <script is:inline src="./old_site_files/script(1).js"></script>
+    <script is:inline src="./old_site_files/script(2).js"></script>
+    <script is:inline src="./old_site_files/script(3).js"></script>
+    <script is:inline src="./old_site_files/script(4).js"></script>
+    <script is:inline src="./old_site_files/script(5).js"></script>
+    <script is:inline src="./old_site_files/script(6).js"></script>
+
+    <link
+      href="./old_site_files/page_4d2f3acea65baa8cb0a952a2995289cf_v1.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link
+      href="./old_site_files/template_39764c00eae68f07d4c3feeb246f4d42_v1.css"
+      type="text/css"
+      data-template-style="true"
+      rel="stylesheet"
+    />
+
+    <!--подключение скриптов сторонних API -->
+
+    <!-- Google Tag Manager -->
+    <noscript>
+      <iframe
+        src="//www.googletagmanager.com/ns.html?id=GTM-KH5XSV"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <script is:inline>
+      document.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
+          (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+              "gtm.start": new Date().getTime(),
+              event: "gtm.js",
+            });
+            var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s),
+              dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "//www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+          })(window, document, "script", "dataLayer", "GTM-KH5XSV");
+        }, 2500);
+      });
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Tag Manager -->
+    <script is:inline>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NGP4688");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- actionpay -->
+    <script is:inline>
+      (function () {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = s.defer = true;
+        s.src = "//aprtx.com/code/{Partner_id}/";
+        var p =
+          document.getElementsByTagName("body")[0] ||
+          document.getElementsByTagName("head")[0];
+        if (p) p.appendChild(s);
+      })();
+    </script>
+    <script
+      is:inline
+      type="text/javascript"
+      defer=""
+      async=""
+      src="./old_site_files/saved_resource"></script>
+    <!-- end of actionpay -->
+
+    <!-- Yandex.Metrika counter -->
+    <script is:inline>
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym",
+      );
+
+      ym(28939035, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+        trackHash: true,
+        ecommerce: "dataLayer",
+        userParams: {
+          UserName: "not specified",
+          UserEmail: "not specified",
+          UserPhone: "not specified",
+          UserID: "0",
+          BITRIX_SM_GUEST_ID: "not specified",
+          Yclid: "1733205428849858193",
+          _gid: "GA1.2.1529456525.1733205428",
+          _ga: "GA1.1.1138378954.1733205428",
+        },
+      });
+    </script>
+    <!-- /Yandex.Metrika counter -->
+
+    <script is:inline>
+      document.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
+          !(function () {
+            var t = document.createElement("script");
+            (t.type = "text/javascript"),
+              (t.async = !0),
+              (t.src = "https://vk.com/js/api/openapi.js?168"),
+              (t.onload = function () {
+                VK.Retargeting.Init("VK-RTRG-538761-5ZFAV"),
+                  VK.Retargeting.Hit();
+              }),
+              document.head.appendChild(t);
+          })();
+        }, 2000);
+      });
+    </script>
+
+    <!-- VK Pixel Code -->
+    <script is:inline type="text/javascript">
+      document.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
+          (window.Image ? new Image() : document.createElement("img")).src =
+            "https://vk.com/rtrg?p=VK-RTRG-132860-bWVmq";
+        }, 2500);
+      });
+    </script>
+    <!-- END of VK Pixel Code -->
+
+    <script is:inline data-skip-moving="true">
+      document.addEventListener("DOMContentLoaded", () => {
+        // зачем подключение аналитики было через таймер?
+        (function (i, s, o, g, r, a, m) {
+          i["GoogleAnalyticsObject"] = r;
+          (i[r] =
+            i[r] ||
+            function () {
+              (i[r].q = i[r].q || []).push(arguments);
+            }),
+            (i[r].l = 1 * new Date());
+          (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m);
+        })(
+          window,
+          document,
+          "script",
+          "//www.google-analytics.com/analytics.js",
+          "ga",
+        );
+
+        setTimeout(() => {
+          function setCookie(name, value, options = {}) {
+            options = {
+              path: "/",
+              // при необходимости добавьте другие значения по умолчанию
+              ...options,
+            };
+
+            if (options.expires instanceof Date) {
+              options.expires = options.expires.toUTCString();
+            }
+
+            let updatedCookie =
+              encodeURIComponent(name) + "=" + encodeURIComponent(value);
+
+            for (let optionKey in options) {
+              updatedCookie += "; " + optionKey;
+              let optionValue = options[optionKey];
+              if (optionValue !== true) {
+                updatedCookie += "=" + optionValue;
+              }
+            }
+
+            document.cookie = updatedCookie;
+          }
+
+          // Пример использования:
+          // setCookie('user', 'John', {secure: true, 'max-age': 3600});
+          function getCookie(name) {
+            let matches = document.cookie.match(
+              new RegExp(
+                "(?:^|; )" +
+                  name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") +
+                  "=([^;]*)",
+              ),
+            );
+            return matches ? decodeURIComponent(matches[1]) : undefined;
+          }
+
+          ga("create", "UA-61906089-1", "auto");
+          if (getCookie("BX_USER_ID") !== undefined) {
+            ga("set", "userId", getCookie("BX_USER_ID")); // Задание идентификатора пользователя с помощью параметра user_id (текущий пользователь).
+            setCookie("user_id", getCookie("BX_USER_ID"), {
+              secure: true,
+              "max-age": 360000,
+            });
+            setCookie("UserID", getCookie("BX_USER_ID"), {
+              secure: true,
+              "max-age": 360000,
+            });
+          }
+          ga("send", "pageview");
+          //ga('require', 'ec');
+        }, 2500);
+      });
+    </script>
+
+    <!-- Top.Mail.Ru counter -->
+    <script is:inline type="text/javascript">
+      var _tmr = window._tmr || (window._tmr = []);
+      _tmr.push({
+        id: "3317814",
+        type: "pageView",
+        start: new Date().getTime(),
+      });
+      (function (d, w, id) {
+        if (d.getElementById(id)) return;
+        var ts = d.createElement("script");
+        ts.type = "text/javascript";
+        ts.async = true;
+        ts.id = id;
+        ts.src = "https://top-fwz1.mail.ru/js/code.js";
+        var f = function () {
+          var s = d.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(ts, s);
+        };
+        if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+          f();
+        }
+      })(document, window, "tmr-code");
+    </script>
+    <noscript>
+      <div>
+        <img
+          src="https://top-fwz1.mail.ru/counter?id=3317814;js=na"
+          style="position: absolute; left: -9999px"
+          alt="Top.Mail.Ru"
+        />
+      </div>
+    </noscript>
+    <!-- /Top.Mail.Ru counter -->
+
+    <link rel="stylesheet" type="text/css" href="./old_site_files/widget.css" />
+    <link rel="stylesheet" type="text/css" href="./old_site_files/flags.css" />
+    <style is:inline type="text/css">
+      #ya-site-form0,
+      #ya-site-form0 .ya-site-form__form,
+      #ya-site-form0 .ya-site-form__input,
+      #ya-site-form0 .ya-site-form__input-text,
+      #ya-site-form0 .ya-site-form__search-precise,
+      #ya-site-form0 .ya-site-form__submit {
+        font-size: 12px !important;
+        color: #000 !important;
+      }
+      #ya-site-form0 .ya-site-form__form-form {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+      #ya-site-form0 .ya-site-form__input {
+        margin: 0;
+        padding: 0;
+      }
+      #ya-site-form0 .ya-site-form__search-precise {
+        margin: 0;
+      }
+      #ya-site-form0 .ya-site-form__search-precise__radio {
+        padding: 0;
+      }
+      #ya-site-form0 .ya-site-form__gap,
+      #ya-site-form0 .ya-site-form__gap-i,
+      #ya-site-form0 .ya-site-form__logo-img {
+        margin: 0;
+        padding: 0;
+      }
+      #ya-site-form0 {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      #ya-site-form0 .ya-site-form__logo-wrap {
+        width: 65px;
+        vertical-align: top;
+        border-collapse: collapse;
+      }
+      #ya-site-form0 .ya-site-form__logo {
+        display: block;
+        width: 52px;
+        margin: 0;
+        padding: 0 6px 0 0;
+        text-decoration: none;
+      }
+      #ya-site-form0 .ya-site-form__logo-img {
+        width: 52px;
+        height: 21px;
+        border: 0 !important;
+      }
+      #ya-site-form0 .ya-site-form__search-wrap {
+        border-collapse: collapse;
+      }
+      #ya-site-form0 .ya-site-form__search {
+        font-size: 12px !important;
+        width: 100%;
+      }
+      #ya-site-form0 .ya-site-form__search-input {
+        padding: 6px;
+      }
+      #ya-site-form0 .ya-site-form__search-input-layout,
+      #ya-site-form0 .ya-site-form__search-input-layout-l,
+      #ya-site-form0 .ya-site-form__search-input-layout-r {
+        font-size: 12px !important;
+        padding: 0;
+        vertical-align: middle;
+        border: 0;
+        border-collapse: collapse;
+      }
+      #ya-site-form0 .ya-site-form__search-input-layout,
+      #ya-site-form0 .ya-site-form__search-input-layout-l {
+        width: 100%;
+      }
+      #ya-site-form0 .ya-site-form__search-precise {
+        padding: 0 18px 5px 6px;
+        text-align: left;
+        vertical-align: top;
+      }
+      #ya-site-form0 .ya-site-form__search-precise-i {
+        white-space: nowrap;
+      }
+      #ya-site-form0 .ya-site-form__search-precise__radio {
+        width: auto;
+        margin: 0 0.3em 0 0;
+        vertical-align: middle;
+        background: 0 0;
+      }
+      #ya-site-form0 .ya-site-form__search-precise__label {
+        margin: 0 0.4em 0 0;
+        padding: 0;
+        vertical-align: middle;
+      }
+      #ya-site-form0 .ya-site-form__input-text {
+        width: 100%;
+        margin: 0 !important;
+        cursor: text;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: #fff;
+        border: 1px solid #7f9db9;
+        outline-style: none;
+        -webkit-appearance: textfield;
+      }
+      #ya-site-form0 .ya-site-form__input-text_type_hint {
+        background-repeat: no-repeat;
+        background-position: 0.2em 50%;
+      }
+      #ya-site-form0 .ya-site-form__submit {
+        display: block;
+        width: auto;
+        margin: 0 0 0 5px;
+      }
+      #ya-site-form0 .ya-site-form__arrow-wrap {
+        overflow: hidden;
+        width: 30px;
+        padding: 0;
+        vertical-align: middle;
+      }
+      #ya-site-form0 .ya-site-form__arrow {
+        position: relative;
+      }
+      #ya-site-form0 .ya-site-form__arrow-a {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 0;
+        height: 0;
+        margin-top: -59px;
+        border: solid transparent;
+        border-width: 59px 0 59px 30px;
+        -moz-border-end-style: dotted;
+      }
+      #ya-site-form0 .ya-site-form__wrap {
+        width: 100%;
+        table-layout: fixed;
+        border-collapse: collapse;
+      }
+      #ya-site-form0 .ya-site-form__gap {
+        border: 0;
+      }
+      #ya-site-form0 .ya-site-form__gap-i {
+        width: 9em;
+      }
+      #ya-site-form0.ya-site-form_arrow_yes .ya-site-form__search-input {
+        padding-right: 0;
+      }
+      #ya-site-form0.ya-site-form_logo_left .ya-site-form__logo {
+        margin-top: 4px;
+        margin-left: 5px;
+      }
+      #ya-site-form0.ya-site-form_logo_top .ya-site-form__logo {
+        display: block;
+        margin: 6px 0 0 6px;
+      }
+      #ya-site-form0 .ya-site-form__submit_type_image {
+        width: 19px;
+        height: 15px;
+        outline: 0;
+        cursor: pointer;
+        border: 0;
+      }
+      #ya-site-form0 .ya-site-form__submit_type_image {
+        background: url(https://site.yandex.net/v2.0/i/search.png) no-repeat;
+      }
+      #ya-site-form0
+        .ya-site-form__form
+        .ya-site-form__input-text::-webkit-input-placeholder {
+        color: #000000;
+      }
+      #ya-site-form0
+        .ya-site-form__form
+        .ya-site-form__input-text:-moz-placeholder {
+        color: #000000;
+      }
+      #ya-site-form0
+        .ya-site-form__form
+        .ya-site-form__input-text::-moz-placeholder {
+        color: #000000;
+      }
+      #ya-site-form0
+        .ya-site-form__form
+        .ya-site-form__input-text:-ms-input-placeholder {
+        color: #000000;
+      }
+      #ya-site-form0 .ya-site-form__form * {
+        font-size: 16px !important;
+      }
+      #ya-site-form0 .ya-site-form__form .ya-site-form__input-text {
+        font-style: normal !important;
+      }
+      #ya-site-form0 .ya-site-form__form .ya-site-form__input-text {
+        font-weight: normal !important;
+      }
+      #ya-site-form0 .ya-site-form__form .ya-site-form__input-text {
+        color: #000000 !important;
+      }
+      #ya-site-form0 .ya-site-form__form .ya-site-form__input-text {
+        border-color: #e4e4e4 !important;
+      }
+      #ya-site-form0 .ya-site-form__form .ya-site-form__input-text:focus {
+        border-color: #e4e4e4 !important;
+      }
+      #ya-site-form0 .ya-site-form__form .ya-site-form__input-text {
+        background-color: #ffffff !important;
+      }
+      #ya-site-form0 .ya-site-form__search,
+      #ya-site-form0 .ya-site-form__search td,
+      #ya-site-form0 .yaform__precise-i {
+        background-color: transparent !important;
+      }
+      #ya-site-form0 .ya-site-form__search-precise__label {
+        color: #000000 !important;
+      }
+      #ya-site-form0 .ya-site-form__arrow-a {
+        border-left-color: transparent;
+      }
+    </style>
+    <link
+      title="поиск по www.cleverence.ru"
+      rel="search"
+      type="application/opensearchdescription+xml"
+      href="https://yandex.ru/search/site/opensearch.xml?ShortName=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%20%D0%BF%D0%BE%20www.cleverence.ru&InputEncoding=utf-8&Image=&Url-results=https%3A%2F%2Fwww.cleverence.ru%2Fsearch%2F%3Fsearchid%3D2471938%26web%3D0%26text%3D%7BsearchTerms%7D&Url-suggest=https%3A%2F%2Fsitesearch-suggest.yandex.ru%2Fv1%2Fsuggest%3F%26site%3D2471938%26lang%3Dru%26part%3D%7BsearchTerms%7D&Url-opensearchdescr=https%3A%2F%2Fyandex.ru%2Fsearch%2Fsite%2Fopensearch.xml%3FShortName%3D%25D0%25BF%25D0%25BE%25D0%25B8%25D1%2581%25D0%25BA%2520%25D0%25BF%25D0%25BE%2520www.cleverence.ru%26InputEncoding%3Dutf-8%26Image%3D%26Url-results%3Dhttps%253A%252F%252Fwww.cleverence.ru%252Fsearch%252F%253Fsearchid%253D2471938%2526web%253D0%2526text%253D%257BsearchTerms%257D%26Url-suggest%3Dhttps%253A%252F%252Fsitesearch-suggest.yandex.ru%252Fv1%252Fsuggest%253F%2526site%253D2471938%2526lang%253Dru%2526part%253D%257BsearchTerms%257D"
+    />
+    <style is:inline>
+      #mango-messengers-w8xU2n *:not(path) {
+        all: unset;
+        box-sizing: border-box;
+      }
+
+      #mango-messengers-w8xU2n form {
+        box-sizing: border-box;
+        z-index: 999999;
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 4px;
+        background-color: #ffffff;
+        box-shadow: 0px 3px 14px 0px rgba(55, 71, 79, 0.3);
+        padding: 32px 24px 24px 24px;
+        min-width: 272px;
+        color: #37474f;
+        border: 1px solid;
+        font-size: 14px;
+      }
+
+      #mango-messengers-w8xU2n span {
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        cursor: pointer;
+      }
+
+      #mango-messengers-w8xU2n input {
+        flex: 1;
+        padding: 12px 16px;
+        border-radius: 4px;
+        border: 1px solid #cfd8dc;
+        background: #fff;
+        height: 40px;
+        width: 100%;
+      }
+      #mango-messengers-w8xU2n button {
+        display: inline-flex;
+        height: 40px;
+        padding: 8px 16px;
+        border-radius: 4px;
+        border: none;
+        margin: 0;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      #mango-messengers-w8xU2n p {
+        margin: 0;
+        width: 100%;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: normal;
+      }
+    </style>
+    <style is:inline type="text/css">
+      #ya-site-form0 .ya-site-suggest {
+        position: relative;
+        margin: 0;
+      }
+      #ya-site-form0 .ya-site-suggest-popup {
+        position: absolute;
+        width: 100%;
+      }
+      #ya-site-form0 .ya-site-suggest__opera-gap {
+        position: absolute;
+        height: 25em;
+        border: 1px solid transparent;
+      }
+      #ya-site-form0 .ya-site-suggest-list {
+        position: absolute;
+        z-index: 9999;
+        overflow: hidden;
+        min-width: 25em;
+        width: 100%;
+        margin-top: -1px;
+        border-collapse: separate;
+        -webkit-box-shadow: 0 1px 7px #9a9a9a;
+        -moz-box-shadow: 0 1px 7px #9a9a9a;
+        box-shadow: 0 1px 7px #9a9a9a;
+        border: 1px solid #dedede;
+        border-color: rgba(154, 154, 154, 0.4) rgba(154, 154, 154, 0.5)
+          rgba(154, 154, 154, 0.6);
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+      }
+      #ya-site-form0 .ya-site-suggest__iframe {
+        position: absolute;
+        z-index: -1;
+        min-width: 25em;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+      }
+      #ya-site-form0 .ya-site-suggest-items {
+        font-size: 16px;
+        min-width: 25em;
+        width: 100%;
+        margin: 0;
+        padding: 0 1px 0 0;
+        list-style: none;
+      }
+      #ya-site-form0 .ya-site-suggest-items li {
+        margin: 0;
+        padding: 0;
+        line-height: normal;
+      }
+      #ya-site-form0 .ya-site-suggest-elem {
+        display: block;
+        padding: 0.25em 0.3em;
+        cursor: pointer;
+        background: url();
+      }
+      #ya-site-form0 a.ya-site-suggest-elem:link,
+      #ya-site-form0 a.ya-site-suggest-elem:visited {
+        text-decoration: none;
+      }
+      html body #ya-site-form0 .ya-site-suggest-elem-link,
+      html body #ya-site-form0 .ya-site-suggest-elem:link {
+        color: #000 !important;
+      }
+      #ya-site-form0 .ya-site-suggest-elem:hover,
+      html body #ya-site-form0 .ya-site-suggest-elem_state_hover {
+        background: #fef6d7;
+      }
+      #ya-site-form0 .ya-site-suggest-elem_nav:hover,
+      #ya-site-form0 .ya-site-suggest-elem_translate:hover {
+        text-decoration: none;
+        color: #000 !important;
+      }
+      #ya-site-form0 .ya-site-suggest-elem_nav .ya-site-suggest__link {
+        text-decoration: underline;
+        color: #1a3dc1;
+      }
+      #ya-site-form0 .ya-site-suggest-elem_translate .ya-site-suggest__link {
+        text-decoration: underline;
+        color: #000;
+      }
+      #ya-site-form0 .ya-site-suggest-elem .ya-site-suggest__info {
+        white-space: nowrap;
+        color: #666;
+      }
+      #ya-site-form0 .ya-site-suggest-elem_selected {
+        background: #fdedaf;
+      }
+      #ya-site-form0 .ya-site-suggest__fact {
+        color: #555;
+      }
+      #ya-site-form0 .ya-site-suggest__highlight {
+        font-weight: 700;
+      }
+    </style>
+    <script
+      is:inline
+      type="text/javascript"
+      async=""
+      src="./old_site_files/openapi(1).js"></script>
+    <link
+      rel="stylesheet"
+      href="./old_site_files/widget(1).css"
+      class="jv-css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./old_site_files/omnichannelMenu.widget.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./old_site_files/chatcontainer.widget.css"
+    />
+
+    <!-- ШРИФТЫ -->
+    <!-- Нужно удалить и задать те что уже подлючены на сайте -->
+    <!-- Так же удалить подключение из стилей -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--  -->
+  </head>
+
+  <body>
+    <Sprite.Provider>
+      <div class="form-responsive" style="display: none">
+        <form method="post" action="//www.cleverence.ru/about/">
+          <input type="hidden" name="ACTION" value="Y" />
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            name="NAME"
+          /><label>Имя</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            name="EMAIL"
+          /><label>Email</label>
+          <textarea name="DESCRIPTION"></textarea><label>Вопросы</label>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+
+      <div class="wrapper page-type-">
+        <div class="ns-wrapper">
+          <header class="ns-header">
+            <div class="ns-logo">
+              <span>
+                <img
+                  class="ns-logo__img"
+                  src="//www.cleverence.ru/local/templates/cleverence_new/img/logo_clev.svg"
+                  alt="Клеверенс Москва"
+                />
+              </span>
+            </div>
+            <div class="container-header-interface">
+              <div class="ns-interface__block">
+                <nav class="ns-header-menu codehim-dropdown">
+                  <ul class="ns-header-container-menu dropdown-items">
+                    <li
+                      class="js-parent-menu"
+                      onclick="ym(28939035,'reachGoal','menu_product')"
+                    >
+                      <span class="ns-header-menu-title">
+                        Продукты <svg
+                          width="12"
+                          height="7"
+                          viewBox="0 0 12 7"
+                          fill="none"
+                        >
+                          <path
+                            d="M5.77397 6.62918L0.25 1.10522L1.35417 0L5.77397 4.4198L10.1938 0L11.2979 1.10522L5.77397 6.62918Z"
+                            fill="#06195E"></path>
+                        </svg>
+                      </span>
+                      <ul
+                        class="ns-menu-products ns-menu-products-list ns-child-menu ns-child-menu-lvl-1"
+                      >
+                        <li class="ns-menu-product">
+                          <img
+                            src="//www.cleverence.ru/upload/iblock/d72/91cns2edy1lqf96tmoexru2kyi4t323l/ICON_WH15-1-_-kopiya.svg"
+                            class="ns-menu-items__img"
+                          />
+                          <a
+                            href="//www.cleverence.ru/software/mobile-smarts/WH15/"
+                            class="ns-menu-items__title">Склад 15</a
+                          >
+                          <a
+                            href="//www.cleverence.ru/downloads/result/49335/"
+                            class="ns-menu-items__download"
+                            >Новые дистрибутивы</a
+                          >
+                          <a
+                            href="//www.cleverence.ru/support/37773/"
+                            class="ns-menu-items__support"
+                            >Установка и настройка</a
+                          >
+                        </li>
+                        <li class="ns-menu-product">
+                          <img
+                            src="//www.cleverence.ru/upload/iblock/9b7/nqoox3y9v0iw34w3rblz7rgff6evu52l/ICON_WH15-1.svg"
+                            class="ns-menu-items__img"
+                          />
+                          <a
+                            href="//www.cleverence.ru/software/mobile-smarts/RTL15/"
+                            class="ns-menu-items__title">Магазин 15</a
+                          >
+                          <a
+                            href="//www.cleverence.ru/downloads/result/600843/"
+                            class="ns-menu-items__download"
+                            >Новые дистрибутивы</a
+                          >
+                          <a
+                            href="//www.cleverence.ru/support/21551/"
+                            class="ns-menu-items__support"
+                            >Установка и настройка</a
+                          >
+                        </li>
+                        <li class="ns-menu-product">
+                          <img
+                            src="//www.cleverence.ru/upload/iblock/aca/9nlqyjn4lchk9yuig4sxz5utqgugtkwm/fabrica.svg"
+                            class="ns-menu-items__img"
+                          />
+                          <a
+                            href="//www.cleverence.ru/software/mobile-smarts/FC15/"
+                            class="ns-menu-items__title">Фабрика 15</a
+                          >
+                          <a
+                            href="//www.cleverence.ru/downloads/result/493918/"
+                            class="ns-menu-items__download"
+                            >Новые дистрибутивы</a
+                          >
+                          <a
+                            href="//www.cleverence.ru/support/502355/"
+                            class="ns-menu-items__support"
+                            >Установка и настройка</a
+                          >
+                        </li>
+                        <li class="ns-menu-product">
+                          <img
+                            src="//www.cleverence.ru/upload/iblock/d2a/ke6d5i30cyl2q19xgjbzsus7efemxum9/asset15.svg"
+                            class="ns-menu-items__img"
+                          />
+                          <a
+                            href="//www.cleverence.ru/software/inventory-software/1C-ASSET-MANAGEMENT/"
+                            class="ns-menu-items__title">Учёт имущества</a
+                          >
+                          <a
+                            href="//www.cleverence.ru/downloads/result/17095/"
+                            class="ns-menu-items__download"
+                            >Новые дистрибутивы</a
+                          >
+                          <a
+                            href="//www.cleverence.ru/support/15366/"
+                            class="ns-menu-items__support"
+                            >Установка и настройка</a
+                          >
+                        </li>
+                        <li class="ns-menu-product">
+                          <img
+                            src="//www.cleverence.ru/upload/iblock/f26/jdxyuxcxxo1p1ip9bm29ljl7rjjbehpo/ASSET.svg"
+                            class="ns-menu-items__img"
+                          />
+                          <a
+                            href="//www.cleverence.ru/software/inventory-software/ASSETS15/"
+                            class="ns-menu-items__title">Учёт 15</a
+                          >
+                          <a
+                            href="//www.cleverence.ru/downloads/result/443876/"
+                            class="ns-menu-items__download"
+                            >Новые дистрибутивы</a
+                          >
+                          <a
+                            href="//www.cleverence.ru/support/15366/"
+                            class="ns-menu-items__support"
+                            >Установка и настройка</a
+                          >
+                        </li>
+                        <li class="ns-menu-product">
+                          <img
+                            src="//www.cleverence.ru/upload/iblock/7e2/0heob2f4ujjdp084j2rxs56hv3q5bhnd/calcul.svg"
+                            class="ns-menu-items__img"
+                          />
+                          <a
+                            href="https://www.cleverence.ru/solutions/calculation/?from=home-calculation"
+                            class="ns-menu-items__title"
+                            >Калькулятор
+                          </a>
+                          <span class="ns-menu-items__support"
+                            >Рассчитай стоимость автоматизации для твоего
+                            бизнеса</span
+                          >
+                        </li>
+                        <li class="ns-menu-products__bottom">
+                          <a
+                            class="ns-btn ns-btn_ds ns-btn_b ns-btn_ds_hover ns-btn_ds_active"
+                            href="//www.cleverence.ru/products/"
+                            >Смотреть все продукты</a
+                          >
+                        </li>
+                        <li class="ns-menu-product ns-menu-items__title_mb">
+                          <a
+                            class="ns-menu-items__title"
+                            href="//www.cleverence.ru/products/">Все продукты</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li
+                      class="js-parent-menu 12 ns-li-lvl-1"
+                      onclick="ym(28939035,'reachGoal','menu_customer')"
+                    >
+                      <span class="ns-header-menu-title">
+                        Клиентам <svg
+                          width="12"
+                          height="7"
+                          viewBox="0 0 12 7"
+                          fill="none"
+                        >
+                          <path
+                            d="M5.77397 6.62918L0.25 1.10522L1.35417 0L5.77397 4.4198L10.1938 0L11.2979 1.10522L5.77397 6.62918Z"
+                            fill="#06195E"></path>
+                        </svg>
+                      </span>
+                      <ul
+                        class="ns-child-menu ns-child-menu-lvl-1 ns-child-menu- type-menu-list"
+                      >
+                        <span class="ns-menu-picture">
+                          <img
+                            src="//www.cleverence.ru/upload/resize_cache/iblock/261/7e1skbfxh6dc0440xjbwdirtwdjw8qjf/420_411_1/64d008111098223.5ffbef36eae6b_removebg_preview.png"
+                            alt=""
+                          />
+                        </span>
+                        <span class="ns-menu-container ns-menu-container_1">
+                          <li class="ns-li-lvl-2">
+                            <a
+                              href="//www.cleverence.ru/solutions/?from=menu_business"
+                              class="parent ns-menu-link ns-link-lvl-2"
+                              >Решения для бизнеса</a
+                            >
+                            <div class="ns-menu-content"></div>
+                            <div class="menu-arrow"></div>
+                            <span class="menu-line"></span>
+                            <ul class="ns-child-menu ns-child-menu-lvl-2">
+                              <span class="ns-menu-container">
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/solutions/warehouse/?from=menu_wh"
+                                  >
+                                    Склад
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/solutions/retail/?from=menu_rtl"
+                                  >
+                                    Магазин
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/solutions/manufacturing/?from=menu_mnfctr"
+                                  >
+                                    Производство
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/solutions/ecom/?from=menu_ecom"
+                                  >
+                                    Онлайн-магазин
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                              </span>
+                            </ul>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              href="//www.cleverence.ru/solutions/?from=menu_employee"
+                              class="parent ns-menu-link ns-link-lvl-2"
+                              >Решения для сотрудников</a
+                            >
+                            <div class="ns-menu-content"></div>
+                            <div class="menu-arrow"></div>
+                            <span class="menu-line"></span>
+                            <ul class="ns-child-menu ns-child-menu-lvl-2">
+                              <span class="ns-menu-container">
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/solutions/warehouse/?from=menu_ruk_wh"
+                                  >
+                                    Руководитель склада
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/solutions/retail/?from=menu_dir_rtl"
+                                  >
+                                    Директор магазина
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/solutions/warehouse/?from=menu_it_wh"
+                                  >
+                                    IT специалист
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/solutions/1c-ut-integratsiya-s-tsd-cherez-kleverens/?from=menu_1С_ut"
+                                  >
+                                    Оператор 1С
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/solutions/accounting/?from=menu_buh"
+                                  >
+                                    Бухгалтер
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                              </span>
+                            </ul>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              href="//www.cleverence.ru/solutions/?from=menu_goal"
+                              class="parent ns-menu-link ns-link-lvl-2"
+                              >Решения под задачи</a
+                            >
+                            <div class="ns-menu-content"></div>
+                            <div class="menu-arrow"></div>
+                            <span class="menu-line"></span>
+                            <ul class="ns-child-menu ns-child-menu-lvl-2">
+                              <span class="ns-menu-container">
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/solutions/stock-taking-all/?from=menu_inv"
+                                  >
+                                    Инвентаризация
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/solutions/warehouse/?from=menu_priemka"
+                                  >
+                                    Приемка
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/solutions/warehouse/?from=menu_otgr"
+                                  >
+                                    Отгрузка
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/solutions/retail/?from=menu_pereozenka"
+                                  >
+                                    Переоценка
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/solutions/markirovka/?from=menu_mark"
+                                  >
+                                    Маркировка
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/solutions/warehouse/?from=menu_adr_wh"
+                                  >
+                                    Адресный склад
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/solutions/warehouse/?from=menu_yach"
+                                  >
+                                    Хранение по ячейкам
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/solutions/warehouse/?from=menu_peremeshenie"
+                                  >
+                                    Перемещение
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                              </span>
+                            </ul>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              class="ns-menu-link ns-link-lvl-2"
+                              href="//www.cleverence.ru/projects/"
+                            >
+                              Истории клиентов
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              class="ns-menu-link ns-link-lvl-2"
+                              href="//www.cleverence.ru/hardware/"
+                            >
+                              Каталог оборудования
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              href="//www.cleverence.ru/partners/"
+                              class="parent ns-menu-link ns-link-lvl-2"
+                              >Выбрать партнера</a
+                            >
+                            <div class="ns-menu-content"></div>
+                            <div class="menu-arrow"></div>
+                            <span class="menu-line"></span>
+                            <ul class="ns-child-menu ns-child-menu-lvl-2">
+                              <span class="ns-menu-container">
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="https://www.cleverence.ru/partners/?level=41191"
+                                  >
+                                    Внедренцы
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="https://www.cleverence.ru/partners/?level=3199"
+                                  >
+                                    Дистрибьюторы
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="https://www.cleverence.ru/partners/?level=11529"
+                                  >
+                                    Реселлеры
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="https://www.cleverence.ru/partners/?level=17"
+                                  >
+                                    Интеграторы
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                              </span>
+                            </ul>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              class="ns-menu-link ns-link-lvl-2"
+                              href="//www.cleverence.ru/solutions/calculation/?from=home-calculation"
+                            >
+                              Расчет стоимости автоматизации
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              class="ns-menu-link ns-link-lvl-2"
+                              href="//www.cleverence.ru/solutions/kurs-razrabotka-mobile-smarts-client/"
+                            >
+                              Обучение по разработке
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              class="ns-menu-link ns-link-lvl-2"
+                              href="//www.cleverence.ru/cart/"
+                            >
+                              Корзина
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              href="//www.cleverence.ru/contacts/?from=menu_clients_contact"
+                              class="parent ns-menu-link ns-link-lvl-2"
+                              >Контакты</a
+                            >
+                            <div class="ns-menu-content"></div>
+                            <div class="menu-arrow"></div>
+                            <span class="menu-line"></span>
+                            <ul class="ns-child-menu ns-child-menu-lvl-2">
+                              <span class="ns-menu-container">
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="https://www.cleverence.ru/contacts/?from=menu_clients_rekvisits"
+                                  >
+                                    Реквизиты компании
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="https://www.cleverence.ru/contacts/?from=menu_clients_proezd"
+                                  >
+                                    Схема проезда
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                              </span>
+                            </ul>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              class="ns-menu-link ns-link-lvl-2"
+                              href="//www.cleverence.ru/about/"
+                            >
+                              О компании
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                        </span>
+                      </ul>
+                    </li>
+                    <li
+                      class="js-parent-menu 12 ns-li-lvl-1"
+                      onclick="ym(28939035,'reachGoal','menu_forpartners') "
+                    >
+                      <span class="ns-header-menu-title">
+                        Партнерам <svg
+                          width="12"
+                          height="7"
+                          viewBox="0 0 12 7"
+                          fill="none"
+                        >
+                          <path
+                            d="M5.77397 6.62918L0.25 1.10522L1.35417 0L5.77397 4.4198L10.1938 0L11.2979 1.10522L5.77397 6.62918Z"
+                            fill="#06195E"></path>
+                        </svg>
+                      </span>
+                      <ul
+                        class="ns-child-menu ns-child-menu-lvl-1 ns-child-menu-partners type-menu-list"
+                      >
+                        <span class="ns-menu-picture">
+                          <img
+                            src="//www.cleverence.ru/upload/resize_cache/iblock/7bc/nqtz3ufk6o5vhk2j788uzzpwhklevp06/420_411_1/Frame-72303.png"
+                            alt=""
+                          />
+                        </span>
+                        <span class="ns-menu-container ns-menu-container_1">
+                          <li class="ns-li-lvl-2">
+                            <a
+                              class="ns-menu-link ns-link-lvl-2"
+                              href="//www.cleverence.ru/solutions/become-a-partner/"
+                            >
+                              Стать партнером
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              href="//www.cleverence.ru/solutions/certification/"
+                              class="parent ns-menu-link ns-link-lvl-2"
+                              >Обучение</a
+                            >
+                            <div class="ns-menu-content"></div>
+                            <div class="menu-arrow"></div>
+                            <span class="menu-line"></span>
+                            <ul class="ns-child-menu ns-child-menu-lvl-2">
+                              <span class="ns-menu-container">
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="https://www.cleverence.ru/solutions/certification-p-wh15-rtl15/"
+                                  >
+                                    Обучение по продуктам
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="https://www.cleverence.ru/solutions/kurs-po-razrabotke-na-platforme-mobile-smarts/"
+                                  >
+                                    Обучение по разработке
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                              </span>
+                            </ul>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              href="//www.cleverence.ru/solutions/certification/"
+                              class="parent ns-menu-link ns-link-lvl-2"
+                              >Сертификация</a
+                            >
+                            <div class="ns-menu-content"></div>
+                            <div class="menu-arrow"></div>
+                            <span class="menu-line"></span>
+                            <ul class="ns-child-menu ns-child-menu-lvl-2">
+                              <span class="ns-menu-container">
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="https://www.cleverence.ru/solutions/certification-p/"
+                                  >
+                                    Сертификация по продажам
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="https://www.cleverence.ru/solutions/certification-v/"
+                                  >
+                                    Сертификация по внедрению
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="https://www.cleverence.ru/solutions/sertifikatsiya-po-razrabotke-na-mobile-smarts-2023/"
+                                  >
+                                    Сертификация по разработке
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                              </span>
+                            </ul>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              class="ns-menu-link ns-link-lvl-2"
+                              href="//www.cleverence.ru/solutions/certified-partners/"
+                            >
+                              Сертифицированные партнеры
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              class="ns-menu-link ns-link-lvl-2"
+                              href="//www.cleverence.ru/partners/project-protect.php"
+                            >
+                              Регистрация проектов
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              class="ns-menu-link ns-link-lvl-2"
+                              href="//www.cleverence.ru/partners/for-partners.php"
+                            >
+                              Партнерский раздел
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              href="//www.cleverence.ru/contacts/?from=menu_partners_contact"
+                              class="parent ns-menu-link ns-link-lvl-2"
+                              >Контакты</a
+                            >
+                            <div class="ns-menu-content"></div>
+                            <div class="menu-arrow"></div>
+                            <span class="menu-line"></span>
+                            <ul class="ns-child-menu ns-child-menu-lvl-2">
+                              <span class="ns-menu-container">
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="https://www.cleverence.ru/contacts/?from=menu_partners_rekvisits"
+                                  >
+                                    Реквизиты компании
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="https://www.cleverence.ru/contacts/?from=menu_partners_proezd"
+                                  >
+                                    Схема проезда
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                              </span>
+                            </ul>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              class="ns-menu-link ns-link-lvl-2"
+                              href="https://t.me/okey_kleverence"
+                            >
+                              Профессиональное сообщество
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                        </span>
+                      </ul>
+                    </li>
+                    <li
+                      class="js-parent-menu 12 ns-li-lvl-1"
+                      onclick="ym(28939035,'reachGoal','menu_instrumentu')"
+                    >
+                      <span class="ns-header-menu-title">
+                        Ресурсы <svg
+                          width="12"
+                          height="7"
+                          viewBox="0 0 12 7"
+                          fill="none"
+                        >
+                          <path
+                            d="M5.77397 6.62918L0.25 1.10522L1.35417 0L5.77397 4.4198L10.1938 0L11.2979 1.10522L5.77397 6.62918Z"
+                            fill="#06195E"></path>
+                        </svg>
+                      </span>
+                      <ul
+                        class="ns-child-menu ns-child-menu-lvl-1 ns-child-menu-tools"
+                      >
+                        <span class="ns-menu-container ns-menu-container_1">
+                          <li class="ns-li-lvl-1 item-menu-mb">
+                            <a
+                              href="//www.cleverence.ru/articles/"
+                              class="ns-menu-link ns-header-menu-title ns-link-lvl-1 root-item item-menu-mb"
+                            >
+                              Статьи
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                          <li class="ns-li-lvl-1 item-menu-mb">
+                            <a
+                              href="//www.cleverence.ru/events/"
+                              class="ns-menu-link ns-header-menu-title ns-link-lvl-1 root-item item-menu-mb"
+                            >
+                              Вебинары
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                          <li class="ns-li-lvl-1 item-menu-mb">
+                            <a
+                              href="//www.cleverence.ru/video/"
+                              class="ns-menu-link ns-header-menu-title ns-link-lvl-1 root-item item-menu-mb"
+                            >
+                              Видео
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              href="https://www.cleverence.ru/hardware/"
+                              class="parent ns-menu-link ns-link-lvl-2"
+                              >Оборудование</a
+                            >
+                            <div class="ns-menu-content"></div>
+                            <div class="menu-arrow"></div>
+                            <span class="menu-line"></span>
+                            <ul class="ns-child-menu ns-child-menu-lvl-2">
+                              <span class="ns-menu-container">
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/hardware/"
+                                  >
+                                    Каталог оборудования
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/software/getlicense/"
+                                  >
+                                    Активация лицензии
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/mobile-smarts/hardware/"
+                                  >
+                                    Поддерживаемое оборудование
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/solutions/calculation/?from=home-calculation"
+                                  >
+                                    Получить расчет автоматизации
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/solutions/uslugi/?from=menu_resources"
+                                  >
+                                    Удаленная настройка
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                              </span>
+                            </ul>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              href="https://www.cleverence.ru/projects/"
+                              class="parent ns-menu-link ns-link-lvl-2"
+                              >Полезные ссылки</a
+                            >
+                            <div class="ns-menu-content"></div>
+                            <div class="menu-arrow"></div>
+                            <span class="menu-line"></span>
+                            <ul class="ns-child-menu ns-child-menu-lvl-2">
+                              <span class="ns-menu-container">
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/news/"
+                                  >
+                                    Новости
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/projects/"
+                                  >
+                                    Кейсы
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/articles/"
+                                  >
+                                    Статьи
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/events/"
+                                  >
+                                    Мероприятия
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/solutions/uslugi/?from=menu_resources"
+                                  >
+                                    Дополнительные услуги
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/video/"
+                                  >
+                                    Видео
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="https://t.me/okey_kleverence"
+                                  >
+                                    Профессиональное сообщество
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                                <li class="ns-li-lvl-3">
+                                  <a
+                                    class="ns-menu-link ns-link-lvl-3"
+                                    href="//www.cleverence.ru/contacts/?from=menu_instr_rekvisits"
+                                  >
+                                    Реквизиты компании
+                                  </a>
+                                  <div class="ns-menu-content"></div>
+                                </li>
+                              </span>
+                            </ul>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              class="ns-menu-link ns-link-lvl-2"
+                              href="https://www.cleverence.ru/contacts/"
+                            >
+                              Контакты
+                            </a>
+                            <div class="ns-menu-content">
+                              <a href="tel:+74956629803" class="callibri_phone"
+                                >+7 (495) 662-98-03</a
+                              >
+                              <span>117105, г. Москва,</span>
+                              <span>Варшавское шоссе, д. 37А</span>
+                              <span class="callibri_phone2"
+                                >sales@cleverence.ru</span
+                              >
+
+                              <div class="ftr">Пн-пт: с 07-00 до 19-00</div>
+
+                              <a
+                                href="https://www.cleverence.ru/contacts/?from=menu_instr_proezd"
+                                >Схема проезда к офису</a
+                              >
+                            </div>
+                          </li>
+                        </span>
+                      </ul>
+                    </li>
+                    <li
+                      class="js-parent-menu 12 ns-li-lvl-1"
+                      onclick="ym(28939035,'reachGoal','menu_support')"
+                    >
+                      <span class="ns-header-menu-title">
+                        Помощь <svg
+                          width="12"
+                          height="7"
+                          viewBox="0 0 12 7"
+                          fill="none"
+                        >
+                          <path
+                            d="M5.77397 6.62918L0.25 1.10522L1.35417 0L5.77397 4.4198L10.1938 0L11.2979 1.10522L5.77397 6.62918Z"
+                            fill="#06195E"></path>
+                        </svg>
+                      </span>
+                      <ul
+                        class="ns-child-menu ns-child-menu-lvl-1 ns-child-menu-support type-menu-list"
+                      >
+                        <span class="ns-menu-picture">
+                          <img
+                            src="//www.cleverence.ru/upload/resize_cache/iblock/e85/rw61cd3yks5umc34zmd3qj3hb0za3gbi/420_411_1/Group_34.png"
+                            alt=""
+                          />
+                        </span>
+                        <span class="ns-menu-container ns-menu-container_1">
+                          <li class="ns-li-lvl-2">
+                            <a
+                              class="ns-menu-link ns-link-lvl-2"
+                              href="//www.cleverence.ru/support/"
+                            >
+                              База знаний
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              class="ns-menu-link ns-link-lvl-2"
+                              href="//www.cleverence.ru/solutions/uslugi/?from=menu_help"
+                            >
+                              Услуги внедрения
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              class="ns-menu-link ns-link-lvl-2"
+                              href="//www.cleverence.ru/help/"
+                            >
+                              Техническая поддержка
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              class="ns-menu-link ns-link-lvl-2"
+                              href="//www.cleverence.ru/downloads/result/?section=14"
+                            >
+                              Дистрибутивы и обновления
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              class="ns-menu-link ns-link-lvl-2"
+                              href="//www.cleverence.ru/downloads/"
+                            >
+                              Загрузки
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              class="ns-menu-link ns-link-lvl-2"
+                              href="/support/category:53/"
+                            >
+                              Лицензии
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              class="ns-menu-link ns-link-lvl-2"
+                              href="/support/category:866/"
+                            >
+                              Часто задаваемые вопросы
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                          <li class="ns-li-lvl-2">
+                            <a
+                              class="ns-menu-link ns-link-lvl-2"
+                              href="//www.cleverence.ru/auth-new/?from=menu_help"
+                            >
+                              Личный кабинет
+                            </a>
+                            <div class="ns-menu-content"></div>
+                          </li>
+                        </span>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="ns-wrapper-bg"></div>
+                <div class="ns-block-search-form">
+                  <div class="ns-link-search js-link-search">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none">
+                      <path
+                        d="M18.9093 17.805L14.8796 13.7754C16.2462 12.1249 16.9246 10.0114 16.774 7.87384C16.6233 5.73627 15.6552 3.73886 14.0705 2.29634C12.4859 0.853816 10.4066 0.0770349 8.26433 0.127295C6.12206 0.177545 4.08144 1.05097 2.5662 2.5662C1.05097 4.08144 0.177545 6.12206 0.127295 8.26433C0.0770349 10.4066 0.853816 12.4859 2.29634 14.0705C3.73886 15.6552 5.73627 16.6233 7.87384 16.774C10.0114 16.9246 12.1249 16.2462 13.7754 14.8796L17.8051 18.9092L18.9093 17.805ZM1.69048 8.46121C1.69048 7.12207 2.08759 5.81299 2.83158 4.69954C3.57557 3.58608 4.63302 2.71824 5.87023 2.20577C7.10744 1.69331 8.46886 1.55922 9.78219 1.82048C11.0956 2.08173 12.3021 2.72659 13.2491 3.67351C14.1959 4.62043 14.8408 5.82688 15.1021 7.14029C15.3633 8.4537 15.2292 9.81511 14.7168 11.0523C14.2043 12.2895 13.3365 13.347 12.223 14.0909C11.1095 14.8349 9.80042 15.2321 8.46136 15.2321C6.6662 15.23 4.9452 14.516 3.67587 13.2467C2.40654 11.9773 1.69252 10.2564 1.69048 8.46121Z"
+                        fill="#06195E"></path>
+                    </svg>
+                  </div>
+                  <form class="ns-search-form js-search-form">
+                    <svg
+                      class="js-btn-submit"
+                      width="19"
+                      height="19"
+                      viewBox="0 0 19 19"
+                      fill="none"
+                    >
+                      <path
+                        d="M18.9093 17.805L14.8796 13.7754C16.2462 12.1249 16.9246 10.0114 16.774 7.87384C16.6233 5.73627 15.6552 3.73886 14.0705 2.29634C12.4859 0.853816 10.4066 0.0770349 8.26433 0.127295C6.12206 0.177545 4.08144 1.05097 2.5662 2.5662C1.05097 4.08144 0.177545 6.12206 0.127295 8.26433C0.0770349 10.4066 0.853816 12.4859 2.29634 14.0705C3.73886 15.6552 5.73627 16.6233 7.87384 16.774C10.0114 16.9246 12.1249 16.2462 13.7754 14.8796L17.8051 18.9092L18.9093 17.805ZM1.69048 8.46121C1.69048 7.12207 2.08759 5.81299 2.83158 4.69954C3.57557 3.58608 4.63302 2.71824 5.87023 2.20577C7.10744 1.69331 8.46886 1.55922 9.78219 1.82048C11.0956 2.08173 12.3021 2.72659 13.2491 3.67351C14.1959 4.62043 14.8408 5.82688 15.1021 7.14029C15.3633 8.4537 15.2292 9.81511 14.7168 11.0523C14.2043 12.2895 13.3365 13.347 12.223 14.0909C11.1095 14.8349 9.80042 15.2321 8.46136 15.2321C6.6662 15.23 4.9452 14.516 3.67587 13.2467C2.40654 11.9773 1.69252 10.2564 1.69048 8.46121Z"
+                        fill="#06195E"></path>
+                    </svg>
+                    <input
+                      class="ns-search-form__input js-field-search"
+                      type="text"
+                      placeholder="Поисковый запрос"
+                    />
+                    <input
+                      class="ns-btn ns-btn_ds ns-btn_sm ns-btn_ds_hover"
+                      type="submit"
+                      value="Найти"
+                    />
+                  </form>
+                </div>
+                <div class="ns-wrapper-search-bg js-search-bg"></div>
+                <div
+                  class="ya-site-form ya-site-form_bg_transparent ya-site-form_inited_yes"
+                  data-bem='{"action":"https://www.cleverence.ru/search/","arrow":false,"bg":"transparent","fontsize":16,"fg":"#000000","language":"ru","logo":"rb","publicname":"поиск по www.cleverence.ru","suggest":true,"target":"_self","tld":"ru","type":3,"usebigdictionary":true,"searchid":2471938,"input_fg":"#000000","input_bg":"#ffffff","input_fontStyle":"normal","input_fontWeight":"normal","input_placeholder":"поиск по сайту","input_placeholderColor":"#000000","input_borderColor":"#e4e4e4"}'
+                  id="ya-site-form0"
+                >
+                  <div class="ya-site-form__form">
+                    <table
+                      class="ya-site-form__wrap"
+                      cellpadding="0"
+                      cellspacing="0"
+                    >
+                      <tbody
+                        ><tr
+                          ><td class="ya-site-form__search-wrap"
+                            ><table
+                              class="ya-site-form__search"
+                              cellpadding="0"
+                              cellspacing="0"
+                            >
+                              <tbody
+                                ><tr
+                                  ><td class="ya-site-form__search-input"
+                                    ><table
+                                      class="ya-site-form__search-input-layout"
+                                    >
+                                      <tbody
+                                        ><tr
+                                          ><td
+                                            class="ya-site-form__search-input-layout-l"
+                                            ><div class="ya-site-form__input">
+                                              <input
+                                                name="text"
+                                                type="search"
+                                                value=""
+                                                class="ya-site-form__input-text"
+                                                placeholder="поиск по сайту"
+                                                autocomplete="off"
+                                              /><div class="ya-site-suggest">
+                                                <div
+                                                  class="ya-site-suggest-popup"
+                                                  style="display: none;"
+                                                >
+                                                  <i
+                                                    class="ya-site-suggest__opera-gap"
+                                                  ></i><div
+                                                    class="ya-site-suggest-list"
+                                                  >
+                                                    <div
+                                                      class="ya-site-suggest__iframe"
+                                                    >
+                                                    </div><ul
+                                                      class="ya-site-suggest-items"
+                                                    >
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div></td
+                                          ><td
+                                            class="ya-site-form__search-input-layout-r"
+                                            ><input
+                                              class="ya-site-form__submit ya-site-form__submit_type_image"
+                                              type="button"
+                                              value=""
+                                            /></td
+                                          ></tr
+                                        ></tbody
+                                      >
+                                    </table></td
+                                  ></tr
+                                ><tr
+                                  ><td class="ya-site-form__gap"
+                                    ><div class="ya-site-form__gap-i"></div></td
+                                  ></tr
+                                ></tbody
+                              >
+                            </table></td
+                          ></tr
+                        ></tbody
+                      >
+                    </table>
+                  </div>
+                </div>
+
+                <script is:inline>
+                  (function (w, d, c) {
+                    var s = d.createElement("script"),
+                      h = d.getElementsByTagName("script")[0],
+                      e = d.documentElement;
+                    if (
+                      (" " + e.className + " ").indexOf(" ya-page_js_yes ") ===
+                      -1
+                    ) {
+                      e.className += " ya-page_js_yes";
+                    }
+                    s.type = "text/javascript";
+                    s.async = true;
+                    s.charset = "utf-8";
+                    s.src =
+                      (d.location.protocol === "https:" ? "https:" : "http:") +
+                      "//site.yandex.net/v2.0/js/all.js";
+                    h.parentNode.insertBefore(s, h);
+                    (w[c] || (w[c] = [])).push(function () {
+                      Ya.Site.Form.init();
+                    });
+                  })(window, document, "yandex_site_callbacks");
+                </script>
+                <a
+                  href="//www.cleverence.ru/auth-new/"
+                  class="button-border-link">Войти</a
+                >
+                <a
+                  href="//www.cleverence.ru/auth-new/?register=yes"
+                  class="button-link-authorize">Начать бесплатно</a
+                >
+
+                <div class="ns-container-social">
+                  <a
+                    class="ns-container-social__img callibri_phone1"
+                    href="https://vk.com/cleverence"
+                    target="_blank"
+                  >
+                    <img
+                      src="//www.cleverence.ru/upload/iblock/04f/903l0yszpley7mg6zk1mn7gyx77nasjs/Frame_65.png"
+                      alt=""
+                    />
+                  </a>
+                  <a
+                    class="ns-container-social__img callibri_phone1"
+                    href="https://www.youtube.com/@sklad15"
+                    target="_blank"
+                  >
+                    <img
+                      src="//www.cleverence.ru/upload/iblock/09c/h9vhrnbpzg6me04quck3k0p71snpn518/Frame_64.png"
+                      alt=""
+                    />
+                  </a>
+                  <a
+                    class="ns-container-social__img callibri_phone1"
+                    href="https://t.me/okey_kleverence"
+                    target="_blank"
+                  >
+                    <img
+                      src="//www.cleverence.ru/upload/iblock/1f5/bn4nih3fqpyr77z6yqv1kwksvl9e6eby/Frame_63.png"
+                      alt=""
+                    />
+                  </a>
+                  <a
+                    class="ns-container-social__img callibri_phone1"
+                    href="https://megasreda.ru/cleverencesoft/welcome"
+                    target="_blank"
+                  >
+                    <img
+                      src="//www.cleverence.ru/upload/iblock/44d/i2sb2n588kirq0j1pem6lnepgugmwfdi/megasreda.svg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a
+              href="//www.cleverence.ru/downloads/result/?product=&section=&q=.apk"
+              class="ns-header-download"
+              onclick="ym(28939035,'reachGoal','download_app')"
+              >Скачать бесплатно</a
+            >
+
+            <div class="burger-menu js-burger-menu">
+              <div class="menu btn1" data-menu="1">
+                <div class="menu-icon-left"></div>
+                <div class="menu-icon-right"></div>
+              </div>
+              <div class="burger-menu__text">Меню</div>
+            </div>
+          </header>
+        </div>
+
+        <section class="content wrap-page-box page-user">
+          <div class="max-wrap">
+            <div class="page-box">
+              <main class="ns-main-content">
+                <slot />
+                <style is:inline>
+                  .max-wrap {
+                    max-width: 1340px;
+                    width: 100%;
+                    margin: 0 auto;
+                    padding: 0 15px;
+                    box-sizing: border-box;
+                  }
+                </style>
+              </main>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="inner-footer">
+        <div class="max-wrap wrap-full">
+          <div class="footer-main-panel inner-section">
+            <div
+              class="inner-subscribe-wrap js-subscribe-form"
+              data-formmaster="bx_2996579772_123"
+            >
+              <div class="form-title">Подписаться на новости</div>
+              <form
+                id="FORM_SUBMIT_bx_2996579772_123"
+                action="//www.cleverence.ru/"
+                class="form-wrap"
+              >
+                <input
+                  type="hidden"
+                  name="sessid"
+                  id="sessid"
+                  value="b36ee1923d9551583b31bca4440f07fb"
+                />
+                <input type="hidden" name="FORM_SUBMIT_ID" value="123" />
+                <input
+                  type="hidden"
+                  name="FORM_ROOT_ID"
+                  value="bx_2996579772_123"
+                />
+                <input type="hidden" name="url" value="www.cleverence.ru/" />
+                <input type="hidden" name="ajax" value="Y" />
+                <input type="hidden" name="WHERE_COME" value="/" />
+                <input type="hidden" name="YOUR_ROBOT" value="" />
+                <input
+                  type="hidden"
+                  name="PARAMS"
+                  value='{"ID":123,"RECAPTCHA":false,"CACHE_TYPE":"A","~ID":123,"~RECAPTCHA":"N","~CACHE_TYPE":"A","ADD_USER":false}'
+                />
+                <input
+                  type="hidden"
+                  name="RESULT"
+                  value='{"FORM":{"ID":"123","TIMESTAMP_X":"28.02.2023 13:10:39","IBLOCK_TYPE_ID":"service","LID":"s1","CODE":"service_forma_podpiski_na_novosti","API_CODE":null,"NAME":"\u0424\u043e\u0440\u043c\u0430 \u043f\u043e\u0434\u043f\u0438\u0441\u043a\u0438 \u043d\u0430 \u043d\u043e\u0432\u043e\u0441\u0442\u0438","ACTIVE":"Y","SORT":"500","LIST_PAGE_URL":"","DETAIL_PAGE_URL":"","SECTION_PAGE_URL":null,"PICTURE":null,"DESCRIPTION":"","DESCRIPTION_TYPE":"html","RSS_TTL":"24","RSS_ACTIVE":"Y","RSS_FILE_ACTIVE":"N","RSS_FILE_LIMIT":null,"RSS_FILE_DAYS":null,"RSS_YANDEX_ACTIVE":"N","XML_ID":null,"TMP_ID":null,"INDEX_ELEMENT":"N","INDEX_SECTION":"N","WORKFLOW":"N","BIZPROC":"N","SECTION_CHOOSER":"L","LIST_MODE":"C","RIGHTS_MODE":"S","SECTION_PROPERTY":null,"VERSION":"2","LAST_CONV_ELEMENT":"0","SOCNET_GROUP_ID":null,"EDIT_FILE_BEFORE":"","EDIT_FILE_AFTER":"","SECTIONS_NAME":null,"SECTION_NAME":null,"ELEMENTS_NAME":"\u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u044b","ELEMENT_NAME":"\u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442","PROPERTY_INDEX":null,"CANONICAL_PAGE_URL":"","REST_ON":"N","EXTERNAL_ID":null,"LANG_DIR":"\/","SERVER_NAME":"www.cleverence.ru","SUBTITLE":"","TEXT_BTN":"","FORM_NAME":""},"~PROPERTIES":[],"PROPERTIES":[{"ID":"779","TIMESTAMP_X":"2023-02-28 13:10:39","IBLOCK_ID":"123","NAME":"EMAIL","ACTIVE":"Y","SORT":"500","CODE":"EMAIL","DEFAULT_VALUE":"","PROPERTY_TYPE":"S","ROW_COUNT":"1","COL_COUNT":"30","LIST_TYPE":"L","MULTIPLE":"N","XML_ID":"","FILE_TYPE":"","MULTIPLE_CNT":"5","TMP_ID":null,"LINK_IBLOCK_ID":"0","WITH_DESCRIPTION":"N","SEARCHABLE":"N","FILTRABLE":"N","IS_REQUIRED":"N","VERSION":"2","USER_TYPE":"email","USER_TYPE_SETTINGS":null,"HINT":""}],"USER_EXISTS":false,"FORM_BUTTON":"\u041e\u0442\u043f\u0440\u0430\u0432\u0438\u0442\u044c","MESSAGE":"","~FILE":"0","DISPLAY_PROPERTIES":[{"TYPE":"text","ID":"_EMAIL","NAME":"EMAIL","LABEL":"EMAIL","REQUIRED":"N","PLACEHOLDER":"","VALUE":"","PARAMS":"","SELECTED":0,"INPUT_CLASS":"","INPUT_TYPE":"email"}]}'
+                />
+                <input type="hidden" name="g-recaptcha-response" value="" />
+                <div class="field-input">
+                  <input
+                    type="text"
+                    name="EMAIL"
+                    class="form-input"
+                    placeholder="Ваш email"
+                  />
+                  <div class="field-title">Вы подписались на новости</div>
+                </div>
+                <div class="field-button">
+                  <button type="submit" class="form-button">Подписаться</button>
+                </div>
+              </form>
+            </div>
+
+            <script is:inline>
+              $(document).ready(function () {
+                const $form = $("[data-formmaster=bx_2996579772_123]").find(
+                  "form",
+                );
+                const $window = $(window);
+
+                const inputchanges_bx_2996579772_123 = false;
+                const justsend_bx_2996579772_123 = false;
+
+                let subscribeForm = $form[0];
+                /**
+                 * информационное сообщение
+                 * @type {Element}
+                 */
+                const fieldTitle = subscribeForm.querySelector(".field-title");
+                /**
+                 * поле EMAIL
+                 * @type {Element}
+                 */
+                const emailField =
+                  subscribeForm.querySelector('[name="EMAIL"]');
+
+                /**
+                 * проверка на email
+                 * @param email str
+                 * @return {boolean}
+                 */
+                const validateEmail = (email) => {
+                  const pattern =
+                    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                  return pattern.test(email);
+                };
+                /**
+                 * очистка классов
+                 */
+                const clearClass = () => {
+                  emailField
+                    .closest(".field-input")
+                    .classList.remove("field-input_error");
+                  emailField
+                    .closest(".field-input")
+                    .classList.remove("field-input_success");
+                };
+
+                /**
+                 * сбрасываем статусы при обновлении поля
+                 */
+                emailField.addEventListener("input", function () {
+                  clearClass();
+                });
+                /**
+                 * сбрасываем статусы при фокусе на поле
+                 */
+                emailField.addEventListener("focus", function () {
+                  clearClass();
+                });
+
+                $("body").on(
+                  "submit",
+                  "#FORM_SUBMIT_bx_2996579772_123",
+                  function (e) {
+                    e.preventDefault();
+
+                    /**
+                     * валидация email
+                     */
+                    if (
+                      !(
+                        emailField.value.length > 0 &&
+                        validateEmail(emailField.value)
+                      )
+                    ) {
+                      emailField
+                        .closest(".field-input")
+                        .classList.add("field-input_error");
+                      fieldTitle.innerHTML =
+                        "Введите действующий адрес электронной почты";
+                      return;
+                    }
+
+                    var $bCheck = $form.find(
+                        "input[name=g-recaptcha-response]",
+                      ),
+                      bcheck = $bCheck.val(),
+                      form = $(this);
+
+                    if (!bcheck) {
+                      if ("grecaptcha" in window) {
+                        grecaptcha.ready(function () {
+                          grecaptcha
+                            .execute(
+                              "6Le2bl8mAAAAAP5ZQZn57FOVPgEm5RXjthx1cUvy",
+                              {
+                                action: "submit",
+                              },
+                            )
+                            .then(function (token) {
+                              $bCheck.val(token);
+                              $form.submit();
+                              return false;
+                            });
+                        });
+                      } else {
+                        bcheck = true;
+                      }
+                    }
+
+                    form
+                      .find("input, textarea")
+                      .not("[type=hidden]")
+                      .each(function (k, el) {
+                        var el = $(el);
+                        if (
+                          el.val() == "" &&
+                          el.attr("name") !== "YOUR_ROBOT"
+                        ) {
+                          el.css("border-color", "red");
+                          bcheck = false;
+                        } else {
+                          el.css("border-color", "");
+                        }
+                      });
+
+                    if (
+                      bcheck &&
+                      form.find('[name="YOUR_ROBOT"]').val().length === 0
+                    ) {
+                      $("body").css("cursor", "wait");
+                      form.css("opacity", "0.4");
+                      form.find("[type=submit]").prop("disabled", true);
+                      let formData = form.serialize();
+                      $.ajax({
+                        type: "POST",
+                        data: formData,
+                        url: "/local/components/cleverence/form.master.any/templates/subscribe/ajax.php",
+                        success: function (data) {
+                          let returnedData = JSON.parse(data);
+                          emailField
+                            .closest(".field-input")
+                            .classList.add("field-input_success");
+                          fieldTitle.innerHTML = "Вы подписались на новости";
+                          $("body").css("cursor", "");
+                          form.css("opacity", "1");
+                          form.find("[type=submit]").prop("disabled", false);
+                          if (returnedData.status) {
+                            emailField
+                              .closest(".field-input")
+                              .classList.add("field-input_success");
+                            setTimeout(() => {
+                              emailField
+                                .closest(".field-input")
+                                .classList.remove("field-input_success");
+                            }, 3000);
+                          } else {
+                            $.each(returnedData.fields, function (k, v) {
+                              $("[name=" + v + "]", this).css(
+                                "border-color",
+                                "red",
+                              );
+                            });
+                          }
+                        },
+                      });
+                    }
+
+                    return false;
+                  },
+                );
+              });
+            </script>
+            <div class="inner-info-wrap">
+              <div class="info-wrap">
+                <p>
+                  117105, г. Москва, Варшавское шоссе, д. 37А <br />Отдел
+                  продаж: <a
+                    href="tel:94956629803"
+                    class="callibri_phone link-phone">+7 (495) 662 98-03</a
+                  >
+                  <br /><a
+                    href="mailto:sales@cleverence.ru"
+                    class="callibri_phone2 link-email">sales@cleverence.ru</a
+                  >
+                </p>
+                <p class="text-light">Пн-пт: с 07-00 до 19-00</p>
+              </div>
+              <div class="block-download">
+                <div class="block-download__title block-download__title_desk">
+                  Скачать бесплатную пробную версию
+                </div>
+                <div class="block-download__title block-download__title_mob">
+                  Скачать на устройство
+                </div>
+                <div class="block-download-img">
+                  <a
+                    class="block-download__img"
+                    href="//www.cleverence.ru/downloads/result/?product=&section=&q=.apk"
+                  >
+                    <img
+                      alt=""
+                      src="//www.cleverence.ru/local/templates/cleverence_new/img/apk.svg"
+                    />
+                  </a>
+                  <a
+                    class="block-download__img"
+                    href="https://play.google.com/store/apps/dev?id=7550538768109162104&hl=ru&gl=US "
+                    download=""
+                  >
+                    <img
+                      alt=""
+                      src="//www.cleverence.ru/local/templates/cleverence_new/img/google.svg"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="logo-wrap">
+                <a href="//www.cleverence.ru/" class="inner-logo">
+                  <img
+                    src="//www.cleverence.ru/local/templates/cleverence_new/img/main/logo-white.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="src-company">
+                <a
+                  href="//www.cleverence.ru/local/templates/cleverence_new/cleverence/cleverence.png"
+                  download=""
+                >
+                  <span class="src-company-logo">
+                    Скачать
+                    <br />
+                     логотип
+                  </span>
+                </a>
+                <a
+                  href="//www.cleverence.ru/upload/presentation/o-kompanii-cleverence.pdf?ver=031220241218"
+                  download=""
+                >
+                  <span class="src-company-pdf">
+                    Скачать PDF
+                    <br />
+                     о компании
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="inner-menu-wrap">
+              <ul class="menu">
+                <li>
+                  <span class="btn-menu btn-menu_parent js-btn-footer-menu">
+                    Продукты <svg
+                      width="12"
+                      height="7"
+                      viewBox="0 0 12 7"
+                      fill="none"
+                    >
+                      <path
+                        d="M5.77397 6.62918L0.25 1.10522L1.35417 0L5.77397 4.4198L10.1938 0L11.2979 1.10522L5.77397 6.62918Z"
+                        fill="#fff"></path>
+                    </svg>
+                  </span>
+                  <ul>
+                    <li>
+                      <a href="//www.cleverence.ru/WH15/" title="Склад 15"
+                        >Склад 15</a
+                      >
+                    </li>
+                    <li>
+                      <a href="//www.cleverence.ru/RTL15/" title="Магазин 15"
+                        >Магазин 15</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="//www.cleverence.ru/1C-ASSET-MANAGEMENT/"
+                        title="Учет имущества">Учет имущества</a
+                      >
+                    </li>
+                    <li>
+                      <a href="//www.cleverence.ru/EXPR/" title="Курьер"
+                        >Курьер</a
+                      >
+                    </li>
+                    <li>
+                      <a href="//www.cleverence.ru/KRV/" title="Кировка"
+                        >Кировка</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="//www.cleverence.ru/MS-CLIENT/"
+                        title="Mobile SMARTS">Mobile SMARTS</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="//www.cleverence.ru/products/"
+                        title="Все продукты">Все продукты</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="btn-menu btn-menu_parent js-btn-footer-menu">
+                    Возможности <svg
+                      width="12"
+                      height="7"
+                      viewBox="0 0 12 7"
+                      fill="none"
+                    >
+                      <path
+                        d="M5.77397 6.62918L0.25 1.10522L1.35417 0L5.77397 4.4198L10.1938 0L11.2979 1.10522L5.77397 6.62918Z"
+                        fill="#fff"></path>
+                    </svg>
+                  </span>
+                  <ul>
+                    <li>
+                      <a
+                        href="//www.cleverence.ru/solutions/warehouse/?from=footer_wh"
+                        title="Для складов">Для складов</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="//www.cleverence.ru/solutions/retail/?from=footer_rtl"
+                        title="Для магазинов">Для магазинов</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="//www.cleverence.ru/solutions/institution/?from=footer_instit"
+                        title="Для учреждений">Для учреждений</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="//www.cleverence.ru/solutions/ecom/?from=footer_ecom"
+                        title="Онлайн-магазин и доставка"
+                        >Онлайн-магазин и доставка</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="//www.cleverence.ru/solutions/manufacturing/?from=footer_mnfctr"
+                        title="Для производств">Для производств</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="//www.cleverence.ru/projects/?from=footer_projects"
+                        title="Кейсы">Кейсы</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="//www.cleverence.ru/uslugi/?from=footer"
+                        title="Услуги">Услуги</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="btn-menu btn-menu_parent js-btn-footer-menu">
+                    Библиотека <svg
+                      width="12"
+                      height="7"
+                      viewBox="0 0 12 7"
+                      fill="none"
+                    >
+                      <path
+                        d="M5.77397 6.62918L0.25 1.10522L1.35417 0L5.77397 4.4198L10.1938 0L11.2979 1.10522L5.77397 6.62918Z"
+                        fill="#fff"></path>
+                    </svg>
+                  </span>
+                  <ul>
+                    <li>
+                      <a href="//www.cleverence.ru/support/" title="База знаний"
+                        >База знаний</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://jira.cleverence.ru/servicedesk/customer/user/login?destination=portals"
+                        title="Техническая поддержка">Техническая поддержка</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="//www.cleverence.ru/downloads/result/?product=&section=14&subtype="
+                        title="Обновления ПО">Обновления ПО</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="//www.cleverence.ru/solutions/certification/"
+                        title="Обучение">Обучение</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="//www.cleverence.ru/partners/for-partners.php"
+                        title="Партнерский раздел">Партнерский раздел</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="//www.cleverence.ru/auth-new/"
+                        title="Личный кабинет">Личный кабинет</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="//www.cleverence.ru/cart/?from=footer"
+                        title="Корзина">Корзина</a
+                      >
+                    </li>
+                    <li>
+                      <a href="//www.cleverence.ru/about/" title="О Компании"
+                        >О Компании</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="//www.cleverence.ru/contacts/?from=footer_contacts"
+                        title="Контакты">Контакты</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="right-inner-panel-bottom">
+            <a href="https://sk.ru/" target="_blank">
+              <img
+                src="//www.cleverence.ru/local/templates/.default/img/sk-white2.png"
+                alt=""
+                class="skolkovo-bottom-logo"
+              />
+            </a>
+          </div>
+
+          <div class="footer-bottom-panel inner-section">
+            <div class="inner-info-wrap">
+              <div class="info-wrap">© Клеверенс 2024</div>
+              <div class="info-wrap">
+                <a href="//www.cleverence.ru/privacypolicy/"
+                  >Политика конфиденциальности</a
+                >
+              </div>
+            </div>
+            <div class="inner-soc-wrap">
+              <div class="soc-title">Подписывайтесь на наши соцсети</div>
+
+              <div class="ns-container-social">
+                <a
+                  class="ns-container-social__img callibri_phone1"
+                  href="https://vk.com/cleverence"
+                  target="_blank"
+                >
+                  <img
+                    src="//www.cleverence.ru/upload/iblock/04f/903l0yszpley7mg6zk1mn7gyx77nasjs/Frame_65.png"
+                    alt=""
+                  />
+                </a>
+                <a
+                  class="ns-container-social__img callibri_phone1"
+                  href="https://www.youtube.com/@sklad15"
+                  target="_blank"
+                >
+                  <img
+                    src="//www.cleverence.ru/upload/iblock/09c/h9vhrnbpzg6me04quck3k0p71snpn518/Frame_64.png"
+                    alt=""
+                  />
+                </a>
+                <a
+                  class="ns-container-social__img callibri_phone1"
+                  href="https://t.me/okey_kleverence"
+                  target="_blank"
+                >
+                  <img
+                    src="//www.cleverence.ru/upload/iblock/1f5/bn4nih3fqpyr77z6yqv1kwksvl9e6eby/Frame_63.png"
+                    alt=""
+                  />
+                </a>
+                <a
+                  class="ns-container-social__img callibri_phone1"
+                  href="https://megasreda.ru/cleverencesoft/welcome"
+                  target="_blank"
+                >
+                  <img
+                    src="//www.cleverence.ru/upload/iblock/44d/i2sb2n588kirq0j1pem6lnepgugmwfdi/megasreda.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script
+        is:inline
+        async=""
+        src="https://www.googletagmanager.com/gtag/js?id=G-EK24WKZNZC"></script>
+
+      <img
+        src="https://api2.bindx.ai/v1/leadformer/embed.png?id=1406&token=75108daf921a3fdf"
+        alt=""
+        style="display: none;"
+      />
+      <div>
+        <div
+          class="grecaptcha-badge"
+          data-style="bottomright"
+          style="width: 256px; height: 60px; display: block; transition: right 0.3s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"
+        >
+          <div class="grecaptcha-logo">
+            <iframe
+              title="reCAPTCHA"
+              width="256"
+              height="60"
+              role="presentation"
+              name="a-wtktqwd3ok6h"
+              frameborder="0"
+              scrolling="no"
+              sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+              src="https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Le2bl8mAAAAAP5ZQZn57FOVPgEm5RXjthx1cUvy&co=aHR0cHM6Ly93d3cuY2xldmVyZW5jZS5ydTo0NDM.&hl=ru&v=pPK749sccDmVW_9DSeTMVvh2&size=invisible&cb=g9s17zcjxpyd"
+            ></iframe>
+          </div>
+          <div class="grecaptcha-error"></div>
+          <textarea
+            id="g-recaptcha-response-100000"
+            name="g-recaptcha-response"
+            class="g-recaptcha-response"
+            style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"
+          ></textarea>
+        </div>
+        <iframe style="display: none;"></iframe>
+      </div>
+      <script is:inline type="text/javascript" id="" charset="">
+        var script = document.createElement("script");
+        script.src = "//callibri-a.akamaihd.net/callibri.js";
+        document.body.appendChild(script);
+        script.onload = function () {
+          callibriInit();
+        };
+      </script>
+      <script is:inline src="//callibri-a.akamaihd.net/callibri.js"></script>
+      <script is:inline type="text/javascript" id="" charset="">
+        $(document).ajaxSuccess(function (c, b, a) {
+          dataLayer.push({
+            event: "ajaxSuccess",
+            ajaxSuccessData: {
+              url: a.url || "",
+              data: a.data || "",
+              responseText: b.responseText || "",
+            },
+          });
+        });
+      </script>
+    </Sprite.Provider>
+  </body>
+  <script
+    is:inline
+    type="text/javascript"
+    src="./old_site_files/mango-callback.js"></script>
+  <script
+    is:inline
+    type="text/javascript"
+    src="./old_site_files/jquery.storage.js"></script>
+</html>
+
+<script src="../assets/scripts/index.ts"></script>

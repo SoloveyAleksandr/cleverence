@@ -1,0 +1,29 @@
+---
+import DefaultBtn from "@components/_UI/DefaultBtn/DefaultBtn.astro";
+---
+
+<section class="section-margin video-banner">
+  <div class="video-banner__container">
+    <div class="video-banner__bg">
+      <picture>
+        <source
+          srcset="./img/video-banner-mob.png"
+          media="(max-width: 600px)"
+        />
+        <img src="./img/video-banner-desc.png" alt="" />
+      </picture>
+    </div>
+    <div class="video-banner__content">
+      <div class="video-banner__inner">
+        <h3 class="f-dewi bold video-banner__title">
+          Как в «Архио» автоматизировали учёт продукции на производстве
+        </h3>
+        <p class="video-banner__text">Дмитрий Чумичев, Генеральный директор</p>
+      </div>
+
+      <DefaultBtn component="a" href="#">Смотреть сейчас</DefaultBtn>
+    </div>
+
+    <span class="video-banner__date">4 октября 2022</span>
+  </div>
+</section>

@@ -1,0 +1,37 @@
+---
+// @ts-nocheck
+import { Sprite } from "astro-icon";
+import type { IUIButtonAttributes, IUIVariableComponent } from "src/interface";
+
+interface Props
+  extends IUIButtonAttributes,
+    IUIVariableComponent,
+    astroHTML.JSX.ButtonHTMLAttributes {
+  variant?: "";
+  size?: "";
+  color?: "";
+}
+
+const {
+  component: Wrapper = "button",
+  variant,
+  size,
+  color,
+  ...props
+} = Astro.props;
+---
+
+<Wrapper
+  class="link-btn"
+  class:list={[
+    {
+      ["default-btn_" + color]: color,
+      ["default-btn_" + variant]: variant,
+      ["default-btn_" + size]: size,
+    },
+  ]}
+  {...props}
+>
+  <slot />
+  <Sprite name="double-right" />
+</Wrapper>

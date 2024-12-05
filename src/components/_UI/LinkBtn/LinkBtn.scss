@@ -1,0 +1,25 @@
+.link-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: $accent;
+  transition: .3s;
+
+  @include hover {
+    color: $dark;
+
+    svg {
+      translate: 40%;
+    }
+  }
+
+  svg {
+    flex: none;
+    width: 16px;
+    height: 16px;
+    transition: translate .3s;
+  }
+}

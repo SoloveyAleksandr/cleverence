@@ -1,0 +1,50 @@
+.video-category {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 52px 24px;
+  align-items: center;
+
+  @include breakpoint($sm-bp) {
+    gap: 28px 16px;
+  }
+
+  @include breakpoint($xs-bp) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    @include breakpoint($xs-bp) {
+      width: 100%;
+      order: 1;
+    }
+  }
+
+  &__list {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 23px;
+
+    @include breakpoint($sl-bp) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint($sm-bp) {
+      width: 100%;
+      gap: 20px;
+    }
+
+    @include breakpoint($xs-bp) {
+      display: flex;
+      flex-direction: column;
+      order: 2;
+    }
+  }
+
+  &__btn {
+    @include breakpoint($xs-bp) {
+      order: 3;
+    }
+  }
+}

@@ -1,0 +1,372 @@
+.video-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+
+  @include breakpoint($xs-bp) {
+    gap: 22px;
+  }
+
+  &__container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    @include breakpoint($xs-bp) {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  &__video {
+    width: 100%;
+    position: relative;
+    border-radius: 14px;
+    height: 508px;
+    overflow: hidden;
+
+    @include breakpoint($sm-bp) {
+      height: 420px;
+    }
+
+    @include breakpoint($xs-bp) {
+      height: 286px;
+    }
+
+    @include img() {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    iframe {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__inner {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 70px;
+
+    @include breakpoint($xm-bp) {
+      flex-direction: column;
+      gap: 62px;
+    }
+  }
+
+  &__btn {
+    min-width: 255px;
+    margin-top: 16px;
+
+    @include breakpoint($xs-bp) {
+      min-width: 180px;
+    }
+  }
+}
+
+.video-detail-links {
+  position: absolute;
+  bottom: 35px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  translate: 100% 0;
+  transition: .5s;
+
+  @include breakpoint($xs-bp) {
+    position: static;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  &._dropped {
+    translate: 0 0;
+  }
+
+  &__title {
+    display: none;
+
+    @include breakpoint($xs-bp) {
+      display: block;
+      font-size: 14px;
+      line-height: 18px;
+      color: #1F1F1F;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border: 20px solid transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: 14px 0 0 0;
+    rotate: -45deg;
+    translate: -50% -50%;
+    backdrop-filter: blur(30px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint($xs-bp) {
+      display: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -20px;
+      top: -20px;
+      width: 40px;
+      height: 40px;
+      border-radius: 14px 0 0 0;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-right: none;
+      border-bottom: none;
+      pointer-events: none;
+    }
+
+    svg {
+      position: absolute;
+      top: -26px;
+      left: -26px;
+      z-index: 2;
+      width: 42px;
+      height: 42px;
+      color: #FFFFFF5E;
+      rotate: 45deg;
+      pointer-events: none;
+    }
+  }
+
+  &__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    backdrop-filter: blur(30px);
+    border-radius: 18px 0 0 18px;
+    padding: 14px;
+
+    @include breakpoint($xs-bp) {
+      flex-direction: row;
+      gap: 12px;
+      padding: 0;
+      backdrop-filter: none;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: calc(50% - 27px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-right: none;
+      pointer-events: none;
+
+      @include breakpoint($xs-bp) {
+        display: none;
+      }
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+      border-bottom: none;
+      border-radius: 18px 0 0 0;
+    }
+
+    &::after {
+      bottom: 0;
+      left: 0;
+      border-top: none;
+      border-radius: 0 0 0 18px;
+    }
+  }
+
+  &__item {
+    flex: none;
+    width: 32px;
+    height: 32px;
+
+    @include hover {
+      img {
+        scale: 1.05;
+      }
+    }
+
+    img {
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+      transition: .3s;
+    }
+  }
+}
+
+.video-detail-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+
+  @include breakpoint($xs-bp) {
+    gap: 12px;
+  }
+
+  &__title {
+    font-size: 26px;
+    line-height: 38px;
+    font-weight: 700;
+    font-family: $f-dewi;
+
+    @include breakpoint($xs-bp) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 28px;
+
+    @include breakpoint($xs-bp) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+
+    @include breakpoint($xs-bp) {
+      gap: 8px;
+    }
+  }
+
+  &__desc {
+    font-size: 18px;
+    line-height: 28px;
+    color: #656565;
+
+    @include breakpoint($xs-bp) {
+      font-size: 12px;
+      line-height: 24px;
+    }
+  }
+
+  &__date {
+    font-size: 14px;
+    line-height: 18px;
+    color: #A6A6A6;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 28px;
+    color: #3858C9;
+    text-decoration: underline;
+  }
+}
+
+.video-detail-swiper {
+  flex: none;
+  width: 612px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @include breakpoint($xm-bp) {
+    width: 100%;
+  }
+
+  @include breakpoint($sm-bp) {
+    gap: 26px;
+  }
+
+  &__container {
+    padding: 0rem 4rem;
+    position: relative;
+
+    @include breakpoint($xs-bp) {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    line-height: 38px;
+    font-weight: 700;
+    font-family: $f-dewi;
+    padding: 0rem 4rem;
+
+    @include breakpoint($xs-bp) {
+      padding: 0;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    z-index: 100;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    translate: 0 -50%;
+
+    @include breakpoint($xs-bp) {
+      display: none;
+    }
+
+    &[data-prev] {
+      left: 0;
+    }
+
+    &[data-next] {
+      right: 0;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .swiper-wrapper {
+    @include breakpoint($xs-bp) {
+      transform: none !important;
+      flex-direction: column;
+      gap: 18px;
+    }
+  }
+
+  .swiper-slide {
+    @include breakpoint($xs-bp) {
+      margin: 0 !important;
+    }
+  }
+
+  .video-card {
+    &__time {
+      display: none;
+    }
+
+    &__group {
+      display: none;
+    }
+  }
+}
