@@ -1,4 +1,5 @@
 ---
+import DefaultBtn from "@components/_UI/DefaultBtn/DefaultBtn.astro";
 import VideoCard from "@components/VideoCard/VideoCard.astro";
 import VideoCategory from "@components/VideoCategory/VideoCategory.astro";
 import VideoDetail from "@components/VideoDetail/VideoDetail.astro";
@@ -32,11 +33,15 @@ import OldSite from "src/layouts/OldSite.astro";
       <a href="#" class="video-detail-info__link">
         Скачать PDF или читать на сайте
       </a>
+
+      <DefaultBtn class="video-detail__btn" component="a" href="#">
+        Хочу так же
+      </DefaultBtn>
     </div>
   </VideoDetail>
 
   <div class="section-margin video-categories">
-    <VideoCategory title="Другие истории успеха “Склад 15”">
+    <VideoCategory title="Истории успеха “Склад 15”">
       <VideoCard
         subtitle="ДиКом | Автоматизированные системы хранения | Склад 15"
         text={false}
@@ -53,7 +58,7 @@ import OldSite from "src/layouts/OldSite.astro";
         poster="./img/video-5.png"
       />
     </VideoCategory>
-    <VideoCategory title="Другие истории успеха “Склад 15”">
+    <VideoCategory title="Истории успеха “Склад 15”">
       <VideoCard
         subtitle="ДиКом | Автоматизированные системы хранения | Склад 15"
         text={false}

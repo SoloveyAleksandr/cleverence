@@ -38,6 +38,7 @@
     @include breakpoint($xs-bp) {
       display: flex;
       flex-direction: column;
+      gap: 28px;
       order: 2;
     }
   }

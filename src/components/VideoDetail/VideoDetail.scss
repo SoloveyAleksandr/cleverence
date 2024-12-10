@@ -63,18 +63,18 @@
   }
 
   &__btn {
-    min-width: 255px;
+    // min-width: 255px;
     margin-top: 16px;
 
-    @include breakpoint($xs-bp) {
-      min-width: 180px;
-    }
+    // @include breakpoint($xs-bp) {
+    //   min-width: 180px;
+    // }
   }
 }
 
 .video-detail-links {
   position: absolute;
-  bottom: 35px;
+  bottom: 72px;
   right: 0;
   display: flex;
   align-items: center;
@@ -317,16 +317,22 @@
 
     @include breakpoint($xs-bp) {
       padding: 0;
+      font-size: 24px;
+      line-height: 28px;
     }
   }
 
   &__btn {
     position: absolute;
     z-index: 100;
-    width: 24px;
-    height: 24px;
-    top: 50%;
+    width: 28px;
+    height: 28px;
+    top: 30%;
     translate: 0 -50%;
+
+    @include breakpoint($xm-bp) {
+      top: 37%;
+    }
 
     @include breakpoint($xs-bp) {
       display: none;
@@ -334,10 +340,18 @@
 
     &[data-prev] {
       left: 0;
+
+      svg {
+        translate: -20% 0;
+      }
     }
 
     &[data-next] {
       right: 0;
+
+      svg {
+        translate: 20% 0;
+      }
     }
 
     svg {
@@ -351,6 +365,10 @@
       transform: none !important;
       flex-direction: column;
       gap: 18px;
+    }
+
+    @include breakpoint($xs-bp) {
+      gap: 28px;
     }
   }
 

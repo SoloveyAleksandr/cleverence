@@ -73,8 +73,8 @@
     }
 
     @include breakpoint($xs-bp) {
-      padding: 16px 10px 21px;
-      gap: 13px;
+      padding: 10px 10px;
+      gap: 12px;
     }
   }
 
@@ -82,7 +82,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 4px;
+    gap: 16px;
 
     @include breakpoint($xs-bp) {
       gap: 8px;
@@ -101,8 +101,8 @@
   }
 
   &__text {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 18px;
     color: $grey-1;
 
     @include breakpoint($xs-bp) {
